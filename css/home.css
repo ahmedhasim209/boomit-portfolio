@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main .container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* start hero section */
+/* start nav */
+main .container nav {
+    margin: 50px 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container nav a {
+    /* width: 134.00250244140625px;
+    width: 23.000003814697266px; */
+}
+main .container nav a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+main .container nav i {
+    color: #BD0A1F;
+    font-size: 20px;
+
+}
+/* start nav */
+/* end hero section */
