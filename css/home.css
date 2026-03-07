@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+      --primary-color: #BD0A1F;
+}
 
 main .container {
     width: 80%;
@@ -17,18 +20,117 @@ main .container nav {
     justify-content: space-between;
     align-items: center;
 }
-main .container nav a {
-    /* width: 134.00250244140625px;
-    width: 23.000003814697266px; */
-}
 main .container nav a img {
     max-width: 100%;
     max-height: 100%;
 }
 main .container nav i {
-    color: #BD0A1F;
+    color: var(--primary-color);
     font-size: 20px;
-
 }
 /* start nav */
+.hero {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 38px;
+    text-align: center;
+    align-items: center;
+}
+.hero .heading-area {  
+    margin-bottom: 20px;
+}
+.hero .heading-area h1 {  
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 124%;
+    text-transform: uppercase;
+}
+.hero .heading-area h1 span {
+    color: var(--primary-color);
+}
+.hero .binocular-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+/* .hero .binocular-area:hover {
+  transform: translatey(5px);
+} */
+.hero .binocular-area .circles {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0;
+}
+.hero .binocular-area .circles {
+}
+.hero .binocular-area .circles .circle {
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.binocular-area:hover .circles .circle {
+  transform: scale(1.4);
+}
+.hero .binocular-area:hover .right {
+  transform: scale(1.4) translateX(15.5px);
+}
+.hero .binocular-area:hover .left {
+  transform: scale(1.4) translateX(-15.5px);
+}
+.hero .binocular-area:hover .img-holder img {
+    transform: translatey(10px);
+}
+.hero .binocular-area .circles .circle {
+    align-self: flex-start;
+    justify-self:start ;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: var(--primary-color);  
+}
+.hero .binocular-area .img-holder {  
+    width: 100%;
+    overflow: hidden;
+}
+.hero .binocular-area .img-holder img {  
+    width: 218px;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.hero .binocular-area .buttons-holder {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+}
+.hero .binocular-area .buttons-holder button {
+    border: none;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.hero .binocular-area .buttons-holder .booking {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+.hero .binocular-area .buttons-holder .speak {
+    background-color: transparent;
+    color: var(--primary-color);
+    
+    border: 2px solid var(--primary-color);
+}
+.hero .paragraph-area {
+
+}
 /* end hero section */
