@@ -1,10 +1,15 @@
+@import url("./fonts.css");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "berlinfb", sans-serif;
+
+}
+body {
 }
 :root {
-      --primary-color: #BD0A1F;
+    --primary-color: #BD0A1F;
 }
 
 main .container {
