@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Futuru";
+  src: url("../assets/fonts/futuru/Futuru-VariableVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Beranda";
+  src: url("../assets/fonts/beranda/Beranda.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "berlin";
+  src: url("../assets/fonts/berlin-sans-fb-demi/BRLNSDB.TTF") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "berlinfb";
+  src: url("../assets/fonts/berlin-sans-fb/BRLNSB.TTF") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
