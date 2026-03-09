@@ -4,12 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "berlinfb", sans-serif;
-
-}
-body {
 }
 :root {
     --primary-color: #BD0A1F;
+    --font-primary: "berlinfb", sans-serif;
+    --font-secondary: "berlin", sans-serif;
+    --font-accent: "beranda", sans-serif;
+    --font-typo: "Futuru", sans-serif;
 }
 
 main .container {
@@ -38,7 +39,7 @@ main .container nav i {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    column-gap: 38px;
+    row-gap: 38px;
     text-align: center;
     align-items: center;
 }
@@ -55,6 +56,7 @@ main .container nav i {
     color: var(--primary-color);
 }
 .hero .binocular-area {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -62,9 +64,6 @@ main .container nav i {
     align-items: center;
     transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-/* .hero .binocular-area:hover {
-  transform: translatey(5px);
-} */
 .hero .binocular-area .circles {
     position: absolute;
     top: 0px;
@@ -72,8 +71,6 @@ main .container nav i {
     transform: translateX(-50%);
     display: flex;
     gap: 0;
-}
-.hero .binocular-area .circles {
 }
 .hero .binocular-area .circles .circle {
     transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -103,6 +100,8 @@ main .container nav i {
     overflow: hidden;
 }
 .hero .binocular-area .img-holder img {  
+    max-width: 100%;
+    margin-bottom: -5px;
     width: 218px;
     position: relative;
     z-index: 2;
@@ -132,10 +131,19 @@ main .container nav i {
 .hero .binocular-area .buttons-holder .speak {
     background-color: transparent;
     color: var(--primary-color);
-    
+    font-weight: 600;
+    text-decoration: underline;
     border: 2px solid var(--primary-color);
 }
 .hero .paragraph-area {
-
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 153%;
+    letter-spacing: 5%;
+    text-align: center;
+}
+.hero .paragraph-area p {
+    font-family: var(--font-typo);
 }
 /* end hero section */
