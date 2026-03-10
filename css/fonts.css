@@ -1,3 +1,5 @@
+/** @format */
+
 @font-face {
   font-family: "Futuru";
   src: url("../assets/fonts/futuru/Futuru-VariableVF.ttf") format("truetype");
@@ -21,7 +23,8 @@
 }
 @font-face {
   font-family: "berlinBoldX";
-  src: url("../assets/fonts/berlin-sans-fb-XB/BRLNEXTRAB.TTF") format("truetype");
+  src: url("../assets/fonts/berlin-sans-fb-XB/BRLNEXTRAB.TTF")
+    format("truetype");
   /* font-weight: 100 900; */
   font-style: normal;
   font-display: swap;
