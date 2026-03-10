@@ -3,16 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "berlinfb", sans-serif;
+    font-family: var(--font-Futuru);
 }
 :root {
     --primary-color: #BD0A1F;
-    --font-primary: "berlinfb", sans-serif;
-    --font-secondary: "berlin", sans-serif;
-    --font-accent: "beranda", sans-serif;
-    --font-typo: "Futuru", sans-serif;
+    --font-Futuru: "Futuru", sans-serif;
+    --font-berlinReg: "berlinReg", sans-serif;
+    --font-berlinBold: "berlinBold", sans-serif;
+    --font-berlinBoldX: "berlinBoldX", sans-serif;
 }
-
 main .container {
     width: 80%;
     margin: 0 auto;
@@ -20,7 +19,7 @@ main .container {
 /* start hero section */
 /* start nav */
 main .container nav {
-    margin: 50px 0;
+    margin: 80px 0 50px 0;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -43,16 +42,17 @@ main .container nav i {
     text-align: center;
     align-items: center;
 }
-.hero .heading-area {  
+.hero .heading-area {
     margin-bottom: 20px;
 }
 .hero .heading-area h1 {  
-    font-weight: 700;
+    font-family: var(--font-berlinBoldX);
     font-size: 34px;
     line-height: 124%;
     text-transform: uppercase;
 }
 .hero .heading-area h1 span {
+    font-family: var(--font-berlinBoldX);
     color: var(--primary-color);
 }
 .hero .binocular-area {
@@ -142,8 +142,67 @@ main .container nav i {
     line-height: 153%;
     letter-spacing: 5%;
     text-align: center;
+    margin-bottom: 85px;
 }
 .hero .paragraph-area p {
     font-family: var(--font-typo);
 }
 /* end hero section */
+/* start Trusted section */
+main .trusted {
+    background-color: var(--primary-color);
+    width: 100%;
+    color:#ffffff;
+    text-align: center;
+
+}
+main .trusted .container {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    width: 80%;
+    margin: 0 auto;
+}
+main .trusted .container h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: var(--font-berlinBoldX);
+
+}
+main .trusted .container p.first {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 142%;
+    text-transform: uppercase;
+    font-family: var(--font-berlinReg);
+}
+main .trusted .container .trusted-flex {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-items: center;
+}
+main .trusted .container .trusted-flex .rows {
+    display: flex;
+    justify-content: center;
+    column-gap: 1px;
+}
+main .trusted .container .trusted-flex .clints {
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+main .trusted .container p.second {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-transform: capitalize;
+    font-family: var(--font-berlinReg);
+}
+
+
+/* start Trusted section */
