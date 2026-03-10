@@ -15,10 +15,40 @@
   --font-berlinBold: "berlinBold", sans-serif;
   --font-berlinBoldX: "berlinBoldX", sans-serif;
 }
-main .container {
+/* start custom components */
+.container {
   width: 80%;
   margin: 0 auto;
 }
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-family: var(--font-berlinBoldX);
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.heading p {
+  font-family: var(--font-berlinReg);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 142%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+h3 {
+  text-align: center;
+  font-family: var(--font-berlinBoldX);
+  font-size: 22px;
+  line-height: 142%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* end custom components */
 /* start hero section */
 /* start nav */
 main .container nav {
@@ -162,21 +192,6 @@ main .trusted .container {
   padding-top: 50px;
   padding-bottom: 75px;
 }
-main .trusted .container h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 100%;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: var(--font-berlinBoldX);
-}
-main .trusted .container p.first {
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 142%;
-  text-transform: uppercase;
-  font-family: var(--font-berlinReg);
-}
 main .trusted .container .trusted-flex {
   padding: 40px 0;
   display: flex;
@@ -211,34 +226,9 @@ main .brief {
 /* main .brief .container {
 
 } */
-main .brief .heading {
-  text-align: center;
-}
-main .brief .heading h2 {
-  font-family: var(--font-berlinBoldX);
-  font-size: 30px;
-  line-height: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-main .brief .heading p {
-  font-family: var(--font-berlinReg);
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 142%;
-  text-align: center;
-  text-transform: capitalize;
-}
 main .brief .plans {
   margin-top: 70px;
   text-align: center;
-}
-main .brief .plans h3 {
-  font-family: var(--font-berlinBoldX);
-  font-size: 22px;
-  line-height: 142%;
-  text-transform: uppercase;
 }
 main .brief .plans .plans-flex {
   margin-top: 20px;
@@ -265,3 +255,38 @@ main .brief .plans .plans-flex .plan p {
   text-transform: uppercase;
 }
 /* end brief section */
+/* start industries section */
+main .industries {
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding: 80px 0;
+}
+main .industries .industries-carts {
+}
+main .industries .industries-carts .industries-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .industries .industries-carts .industries-flex .cart {
+  width: 183px;
+  height: 163px;
+}
+main .industries .industries-carts .industries-flex .cart img {
+  margin-bottom: 20px;
+}
+main .industries .industries-carts .industries-flex .cart p {
+  font-family: var(--font-Futuru);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 142%;
+  text-transform: uppercase;
+}
+main .industries .industries-carts .industries-flex .cart p.commerce {
+  text-transform: none;
+}
+
+/* end industries section */
