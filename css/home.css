@@ -291,7 +291,6 @@ main .industries .industries-carts .industries-flex .cart p {
 main .industries .industries-carts .industries-flex .cart p.commerce {
   text-transform: none;
 }
-
 /* end industries section */
 /* start consultation section */
 main .consultation {
@@ -350,8 +349,9 @@ main .consultation .booking button {
   color: var(--primary-color);
   background-color: transparent;
   border: 2px solid var(--primary-color);
+  width: 100%;
   border-radius: 10px;
-  padding: 20px 120px;
+  padding: 20px 110px;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
@@ -465,3 +465,124 @@ main .services button {
   border: none;
 }
 /* end Services section */
+/* start testimonials section */
+main .testimonials {
+  padding: 80px 0;
+}
+main .testimonials .heading {
+  margin-bottom: 40px;
+}
+main .testimonials .heading p {
+  color: #404040;
+}
+main .testimonials .testimonials-area {
+  position: relative;
+}
+main .testimonials .testimonials-area .img-holder {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+main .testimonials .testimonials-area .img-holder img {
+  height: 1050px;
+}
+main .testimonials .testimonials-area .step1 {
+  position: absolute;
+  left: 81%;
+  transform: translate(-69%, 0%);
+  margin-left: 20px;
+}
+main .testimonials .testimonials-area .step1 h3,
+main .testimonials .testimonials-area .step2 h3,
+main .testimonials .testimonials-area .step3 h3,
+main .testimonials .testimonials-area .step4 h3 {
+  color: #931213;
+  text-align: start;
+  margin-bottom: 20px;
+  font-family: var(--font-Futuru);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+}
+main .testimonials .testimonials-area .step1 h2,
+main .testimonials .testimonials-area .step2 h2,
+main .testimonials .testimonials-area .step3 h2,
+main .testimonials .testimonials-area .step4 h2 {
+  color: #931213;
+  text-align: start;
+  margin-bottom: 20px;
+  font-family: var(--font-Futuru);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+}
+main .testimonials .testimonials-area .step1 p,
+main .testimonials .testimonials-area .step2 p,
+main .testimonials .testimonials-area .step3 p,
+main .testimonials .testimonials-area .step4 p {
+  font-family: var(--font-Futuru);
+  color: #404040;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+}
+main .testimonials .testimonials-area .step2 {
+  position: absolute;
+  width: 124px;
+  top: 225px;
+  text-align: end;
+  margin-right: 20px;
+}
+main .testimonials .testimonials-area .step2 h3,
+main .testimonials .testimonials-area .step4 h3,
+main .testimonials .testimonials-area .step2 h2,
+main .testimonials .testimonials-area .step4 h2 {
+  text-align: end;
+}
+main .testimonials .testimonials-area .step3 {
+  position: absolute;
+  top: 445px;
+  left: 81%;
+  transform: translate(-69%, 0%);
+  margin-left: 20px;
+}
+main .testimonials .testimonials-area .step4 {
+  position: absolute;
+  width: 124px;
+  top: 775px;
+  text-align: end;
+  margin-right: 20px;
+}
+main .testimonials .booking {
+  position: absolute;
+  top: 1090px;
+  padding-bottom: 80px;
+}
+main .testimonials .booking h4 {
+  font-family: var(--font-Futuru);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: center;
+}
+main .testimonials .booking button {
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+/* end testimonials section */
