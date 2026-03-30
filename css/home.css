@@ -585,38 +585,49 @@ main .testimonials .booking button {
   text-transform: capitalize;
   font-weight: 800;
 }
-/* main .testimonials .testimonials-area .step1 {
-  position: absolute;
-  left: 81%;
-  transform: translate(-69%, 0%);
-  margin-left: 20px;
-}
-main .testimonials .testimonials-area .step2 {
-  position: absolute;
-  width: 124px;
-  top: 225px;
-  text-align: end;
-  margin-right: 20px;
-}
-main .testimonials .testimonials-area .step2 h3,
-main .testimonials .testimonials-area .step4 h3,
-main .testimonials .testimonials-area .step2 h2,
-main .testimonials .testimonials-area .step4 h2 {
-  text-align: end;
-}
-main .testimonials .testimonials-area .step3 {
-  position: absolute;
-  top: 445px;
-  left: 81%;
-  transform: translate(-69%, 0%);
-  margin-left: 20px;
-}
-main .testimonials .testimonials-area .step4 {
-  position: absolute;
-  width: 124px;
-  top: 775px;
-  text-align: end;
-  margin-right: 20px;
-}
-  */
 /* end testimonials section */
+/* start insights section */
+main .insights {
+  padding: 80px 0;
+}
+.insights-carts {
+  position: relative;
+}
+.insights-carts .cart {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  z-index: -1;
+  margin: 0 auto;
+  width: 100%;
+  height: 258px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url(../assets/images/home/insights-img.jpg);
+  background-size: cover;
+}
+.insights-carts .cart::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0 deg, #00000099, #00000000);
+}
+.insights-carts .cart h4 {
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  z-index: 1;
+  font-family: var(--font-Futuru);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+/* end insights section */
