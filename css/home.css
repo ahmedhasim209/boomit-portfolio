@@ -1,4 +1,12 @@
 /** @format */
+/* :root {
+  --primary-color: #bd0a1f;
+  --secondary-color: #f4cd03;
+  --font-Futuru: "Futuru", sans-serif;
+  --font-berlinReg: "berlinReg", sans-serif;
+  --font-berlinBold: "berlinBold", sans-serif;
+  --font-berlinBoldX: "berlinBoldX", sans-serif;
+} */
 @import url("./fonts.css");
 * {
   margin: 0;
