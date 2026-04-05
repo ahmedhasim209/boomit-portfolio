@@ -63,3 +63,95 @@ main .landing .buttons .whatsapp a {
   color: #ffffff;
 }
 /* end landing section */
+/* start form section */
+main .form {
+  padding: 40px 20px;
+  background-color: rgba(34, 34, 34, 0.79);
+  border-radius: 21px;
+  margin-bottom: 115px;
+}
+main .form .heading {
+  color: #ffffff;
+}
+main .form .heading h2 {
+  text-align: start;
+}
+main .form .heading p {
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+  letter-spacing: 5%;
+  text-align: start;
+}
+main .form form .field-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 10px;
+}
+main .form form .field-group:last-of-type {
+  padding-bottom: 20px;
+}
+main .form form .field-group label {
+  color: #ffffff;
+  font-family: var(--font-Futuru);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 7%;
+  text-transform: capitalize;
+}
+main .form form .field-group input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(226, 225, 229, 1);
+  border-radius: 5px;
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  height: 50px;
+  padding-left: 15px;
+}
+main .form form .field-group input:last-child {
+  width: 122%;
+}
+main .form form .field-group input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+main .form form .field-group span {
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 7%;
+  color: rgba(189, 10, 31, 1);
+}
+main .form form button {
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+main .form form p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+}
+.iti__selected-flag {
+  color: #ffffff;
+}
+/* end form section */
