@@ -1,0 +1,169 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+/* start landing section  */
+main .landing {
+  padding-bottom: 50px;
+}
+main .landing .heading h1 {
+  font-family: var(--font-berlinBoldX);
+  font-size: 48px;
+  line-height: 87%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: start;
+}
+main .landing .heading p {
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: start;
+}
+main .landing .circle {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+}
+main .landing .circle .right,
+main .landing .circle .left {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+/* end landing section  */
+/* start vision section */
+main .vision {
+  padding-bottom: 50px;
+}
+main .vision .carts .cart {
+  width: 100%;
+  padding: 51px 57px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 20px;
+  background-color: #918f5c08;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+main .vision .carts .cart .icon-holder {
+  width: 38px;
+  height: 38px;
+}
+main .vision .carts .cart .icon-holder img {
+  width: 38px;
+  height: 38px;
+}
+main .vision .carts .cart .content h3 {
+  font-family: var(--font-Futuru);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
+}
+main .vision .carts .cart .content h4 {
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  font-size: 16px;
+  color: #606060;
+  line-height: 153%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: left;
+}
+/* end vision section */
+/* start we combine section */
+main .combine .heading {
+  padding-bottom: 50px;
+}
+main .combine .heading h5 {
+  font-family: var(--font-berlinReg);
+  font-size: 20px;
+  line-height: 143%;
+  text-align: center;
+}
+main .combine .combines {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 90px;
+}
+main .combine .combines .combine-cart {
+  padding: 20px 40px;
+  background: linear-gradient(
+    115deg,
+    #f9f8f0,
+    #918f5c00,
+    #918f5c00,
+    #918f5c00,
+    #918f5c00,
+    #918f5c00
+  );
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+main .combine .combines .combine-cart h3 {
+  font-family: var(--font-Futuru);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: start;
+  margin: 0;
+}
+main .combine .combines .combine-cart i {
+  background-color: #01fdb2;
+  padding: 5px;
+  border-radius: 7px;
+  color: #fff;
+}
+main .combine .buttons-holder {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+main .combine .buttons-holder button {
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+main .combine .buttons-holder .booking {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+main .combine .buttons-holder .speak {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  border: 2px solid var(--primary-color);
+}
+/* end we combine section */
