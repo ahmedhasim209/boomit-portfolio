@@ -1,0 +1,33 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+main .landing {
+  background-color: var(--secondary-color);
+}
+main .landing .heading {
+  padding-top: 20px;
+}
+main .landing .heading h1 {
+  font-family: var(--font-berlinBoldX);
+  font-size: 34px;
+  line-height: 124%;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 35px;
+}
+main .landing .heading p {
+  font-family: var(--font-berlinReg);
+  font-size: 20px;
+  line-height: 142%;
+  color: #454545;
+  text-align: left;
+  padding-bottom: 10px;
+  margin: 0;
+}
