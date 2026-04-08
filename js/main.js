@@ -68,12 +68,14 @@ function validatePhone() {
 
 function showError(input, message) {
   input.classList.add("error");
+  input.closest(".field-group").classList.add("error-active");
   input.closest(".field-group").querySelector(".error-msg").textContent =
     message;
 }
 
 function clearError(input) {
   input.classList.remove("error");
+  input.closest(".field-group").classList.remove("error-active");
   input.closest(".field-group").querySelector(".error-msg").textContent = "";
 }
 
@@ -121,5 +123,5 @@ form.addEventListener("submit", async (e) => {
   // disable button
   const btn = form.querySelector('button[type="submit"]');
   btn.disabled = true;
-  btn.textContent = "Sending...";
+  btn.textContent = "submitting...";
 });

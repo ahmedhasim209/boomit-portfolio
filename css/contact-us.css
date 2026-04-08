@@ -125,7 +125,16 @@ main .form form .field-group span {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 7%;
-  color: rgba(189, 10, 31, 1);
+  color: var(--secondary-color);
+}
+/* error state on input */
+main .form form .field-group input.error {
+  border: 1px solid var(--secondary-color);
+}
+
+/* error state on label */
+main .form form .field-group.error-active label {
+  color: var(--secondary-color);
 }
 main .form form button {
   width: 100%;
