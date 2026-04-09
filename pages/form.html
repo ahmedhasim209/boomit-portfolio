@@ -69,384 +69,391 @@
             <h2>Background of Company</h2>
           </div>
           <form action=""></form>
-        </div>
-        <div class="form-area">
-          <form id="brief-form" novalidate>
-            <!-- Company Name -->
-            <div class="field-group">
-              <label for="company-name">Company Name</label>
-              <input
-                type="text"
-                id="company-name"
-                name="company_name"
-                placeholder="Company Name"
-                required />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Company Industry -->
-            <div class="field-group">
-              <label for="industry">Company Industry</label>
-              <select name="industry" id="industry" required>
-                <option value="">Select Industry</option>
-                <option value="accounting">Accounting & Legal Services</option>
-                <option value="agriculture">Agriculture</option>
-                <option value="agritech">Agritech & FoodTech</option>
-                <option value="animation">Animation & Motion Graphics</option>
-                <option value="automotive">Automotive</option>
-                <option value="beauty">Beauty & Personal Care</option>
-                <option value="celebrities">Celebrities</option>
-                <option value="cleaning">Cleaning & Facility Services</option>
-                <option value="construction">Construction & Contracting</option>
-                <option value="consulting">
-                  Consulting & Corporate Services
-                </option>
-                <option value="creative">Creative & Branding Agencies</option>
-                <option value="digital">Digital Marketing</option>
-                <option value="e-commerce">E-commerce</option>
-                <option value="edTech">EdTech</option>
-                <option value="education">Education & Training</option>
-                <option value="energy">Energy & Utilities</option>
-                <option value="entertainment">Entertainment & Media</option>
-                <option value="event">Event Production & AV</option>
-                <option value="events">Events Management</option>
-                <option value="exhibitions">Exhibitions & Conferences</option>
-                <option value="fashion">Fashion & Apparel</option>
-                <option value="finance">Finance & Banking</option>
-                <option value="film">Film & TV Production</option>
-                <option value="fitness">Fitness & Sports</option>
-                <option value="food">Food & Beverage</option>
-                <option value="freelancers">Freelancers & Coaches</option>
-                <option value="government">Government & Public Sector</option>
-                <option value="healthTech">HealthTech</option>
-                <option value="healthcare">Healthcare</option>
-                <option value="home">Home Services</option>
-                <option value="import">Import & Export</option>
-                <option value="industrial">Industrial Production</option>
-                <option value="influencers">
-                  Influencers & Content Creators
-                </option>
-                <option value="interior">Interior Design & Furniture</option>
-                <option value="investment">Investment & Insurance</option>
-                <option value="logistics">Logistics & Transportation</option>
-                <option value="luxury">Luxury Goods</option>
-                <option value="manufacturing">Manufacturing</option>
-                <option value="marketplace">Marketplace Platforms</option>
-                <option value="marketing">Marketing & Advertising</option>
-                <option value="media">Media Buying</option>
-                <option value="medical">Medical Devices</option>
-                <option value="music">Music & Audio Production</option>
-                <option value="nGOs">NGOs & Non-Profit</option>
-                <option value="oil">Oil & Gas</option>
-                <option value="pet">Pet Care</option>
-                <option value="pharmaceuticals">Pharmaceuticals</option>
-                <option value="photography">Photography & Videography</option>
-                <option value="post">Post-Production Studios</option>
-                <option value="public">Public Figures</option>
-                <option value="real">Real Estate</option>
-                <option value="renewable">Renewable Energy</option>
-                <option value="retail">Retail</option>
-                <option value="security">Security Services</option>
-                <option value="software">Software & SaaS</option>
-                <option value="technology">Technology & IT</option>
-                <option value="telecommunications">Telecommunications</option>
-                <option value="travel">Travel & Aviation</option>
-                <option value="tV">TV Hosts & Presenters</option>
-                <option value="weddings">Weddings & Social Events</option>
-                <option value="other">Other</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Website -->
-            <div class="field-group">
-              <label for="website">Website</label>
-              <input
-                type="url"
-                id="website"
-                name="website"
-                placeholder="ex. boomit.com" />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Founded At -->
-            <div class="field-group">
-              <label for="founded">Founded At</label>
-              <select name="founded" id="founded">
-                <option value="startup">Startup</option>
-                <option value="less-1">Less than 1 Year</option>
-                <option value="1-3">1-3 Years</option>
-                <option value="3-5">3-5 Years</option>
-                <option value="5-10">5-10 Years</option>
-                <option value="10+">More than 10 Years</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Social Media handles -->
-            <div class="field-group">
-              <label for="social-media">Social Media</label>
-              <input
-                type="text"
-                id="social-media"
-                name="social-media"
-                placeholder="ex. Instagram, Facebook" />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Instagram link -->
-            <div class="field-group">
-              <label for="instgram">Instgram</label>
-              <input
-                type="url"
-                id="instgram"
-                name="instgram"
-                placeholder="Paste a link" />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Contact Person -->
-            <div class="field-group">
-              <label for="contact-person">Contact Person</label>
-              <input
-                type="text"
-                id="contact-person"
-                name="contact-person"
-                placeholder="ex. Mohamed, Sara"
-                required />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Email -->
-            <div class="field-group">
-              <label for="email">Email Address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="XXXXXXX@gmail.com"
-                required />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Phone -->
-            <div class="field-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="0XXXXXXXXX"
-                required />
-              <span class="error-msg"></span>
-            </div>
-            <!-- Active Platforms checkboxes -->
-            <div class="field-group">
-              <label>Active Platforms</label>
-              <div class="checkbox-list">
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="facebook" />
-                  Facebook</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="instagram" />
-                  Instagram</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="tiktok" />
-                  TikTok</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="snapchat" />
-                  Snapchat</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="twitter" /> X
-                  (Twitter)</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="linkedin" />
-                  LinkedIn</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="platforms" value="youtube" />
-                  YouTube</label
-                >
+
+          <div class="form-area">
+            <form id="brief-form" novalidate>
+              <!-- Company Name -->
+              <div class="field-group">
+                <label for="company-name">Company Name</label>
+                <input
+                  type="text"
+                  id="company-name"
+                  name="company_name"
+                  placeholder="Company Name"
+                  required />
+                <span class="error-msg"></span>
               </div>
-              <span class="error-msg"></span>
-            </div>
-            <div class="field-group">
-              <label for="tov">Tone of Voice (TOV)</label>
-              <select id="tov" name="tov" required>
-                <option value="">Select TOV</option>
-                <option value="authoritative">Authoritative</option>
-                <option value="casual">Casual</option>
-                <option value="confident">Confident</option>
-                <option value="creative">Creative</option>
-                <option value="direct">Direct</option>
-                <option value="energetic">Energetic</option>
-                <option value="friendly">Friendly</option>
-                <option value="inspirational">Inspirational</option>
-                <option value="luxury">Luxury</option>
-                <option value="minimalist">Minimalist</option>
-                <option value="motivational">Motivational</option>
-                <option value="premium">Premium</option>
-                <option value="professional">Professional</option>
-                <option value="supportive">Supportive</option>
-                <option value="warm">Warm</option>
-                <option value="other">Other</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Persona -->
-            <div class="field-group">
-              <label for="persona">Persona</label>
-              <select id="persona" name="persona" required>
-                <option value="">Select Persona</option>
-                <option value="data-driven">Data-Driven</option>
-                <option value="creative">Creative</option>
-                <option value="analytical">Analytical</option>
-                <option value="innovative">Innovative</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Target Audience -->
-            <div class="field-group">
-              <label for="audience">Target Audience</label>
-              <select name="audience" id="audience" required>
-                <option value="">Select Audience</option>
-                <option value="b2b">B2B (Business to Business)</option>
-                <option value="b2c">B2C (Business to Consumer)</option>
-                <option value="high-income">High-Income Customers</option>
-                <option value="kids">Kids & Teens</option>
-                <option value="local">Local Customers</option>
-                <option value="moms">Moms</option>
-                <option value="professionals">Professionals</option>
-                <option value="smes">SMEs (Small & Medium Enterprises)</option>
-                <option value="startups">Startups</option>
-                <option value="students">Students</option>
-                <option value="tech">Tech Users</option>
-                <option value="tourists">Tourists & Visitors</option>
-                <option value="wholesale">Wholesale Buyers</option>
-                <option value="youth">Youth</option>
-                <option value="other">Other</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Preferred Contact Time -->
-            <div class="field-group">
-              <label for="contact-time">Preferred Contact Time</label>
-              <select name="contact-time" id="contact-time" required>
-                <option value="">Select Time</option>
-                <option value="08-12">08:00 AM TO 12:00 PM</option>
-                <option value="12-16">12:00 PM TO 04:00 PM</option>
-                <option value="16-20">04:00 PM TO 08:00 PM</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Services checkboxes -->
-            <div class="field-group">
-              <label>Services</label>
-              <div class="checkbox-list">
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="services"
-                    value="social-media-management" />
-                  Social Media Management</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="services" value="branding" />
-                  Branding</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="services" value="design" />
-                  Design</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="services"
-                    value="pr-influencer" />
-                  PR & Influencer Campaigns</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="services"
-                    value="media-buying" />
-                  Media Buying \ Meta\ Google\ TikTok</label
-                >
-                <label class="checkbox-item"
-                  ><input type="checkbox" name="services" value="web-dev" /> Web
-                  Development</label
-                >
+              <!-- Company Industry -->
+              <div class="field-group">
+                <label for="industry">Company Industry</label>
+                <select name="industry" id="industry" required>
+                  <option value="">Select Industry</option>
+                  <option value="accounting">
+                    Accounting & Legal Services
+                  </option>
+                  <option value="agriculture">Agriculture</option>
+                  <option value="agritech">Agritech & FoodTech</option>
+                  <option value="animation">Animation & Motion Graphics</option>
+                  <option value="automotive">Automotive</option>
+                  <option value="beauty">Beauty & Personal Care</option>
+                  <option value="celebrities">Celebrities</option>
+                  <option value="cleaning">Cleaning & Facility Services</option>
+                  <option value="construction">
+                    Construction & Contracting
+                  </option>
+                  <option value="consulting">
+                    Consulting & Corporate Services
+                  </option>
+                  <option value="creative">Creative & Branding Agencies</option>
+                  <option value="digital">Digital Marketing</option>
+                  <option value="e-commerce">E-commerce</option>
+                  <option value="edTech">EdTech</option>
+                  <option value="education">Education & Training</option>
+                  <option value="energy">Energy & Utilities</option>
+                  <option value="entertainment">Entertainment & Media</option>
+                  <option value="event">Event Production & AV</option>
+                  <option value="events">Events Management</option>
+                  <option value="exhibitions">Exhibitions & Conferences</option>
+                  <option value="fashion">Fashion & Apparel</option>
+                  <option value="finance">Finance & Banking</option>
+                  <option value="film">Film & TV Production</option>
+                  <option value="fitness">Fitness & Sports</option>
+                  <option value="food">Food & Beverage</option>
+                  <option value="freelancers">Freelancers & Coaches</option>
+                  <option value="government">Government & Public Sector</option>
+                  <option value="healthTech">HealthTech</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="home">Home Services</option>
+                  <option value="import">Import & Export</option>
+                  <option value="industrial">Industrial Production</option>
+                  <option value="influencers">
+                    Influencers & Content Creators
+                  </option>
+                  <option value="interior">Interior Design & Furniture</option>
+                  <option value="investment">Investment & Insurance</option>
+                  <option value="logistics">Logistics & Transportation</option>
+                  <option value="luxury">Luxury Goods</option>
+                  <option value="manufacturing">Manufacturing</option>
+                  <option value="marketplace">Marketplace Platforms</option>
+                  <option value="marketing">Marketing & Advertising</option>
+                  <option value="media">Media Buying</option>
+                  <option value="medical">Medical Devices</option>
+                  <option value="music">Music & Audio Production</option>
+                  <option value="nGOs">NGOs & Non-Profit</option>
+                  <option value="oil">Oil & Gas</option>
+                  <option value="pet">Pet Care</option>
+                  <option value="pharmaceuticals">Pharmaceuticals</option>
+                  <option value="photography">Photography & Videography</option>
+                  <option value="post">Post-Production Studios</option>
+                  <option value="public">Public Figures</option>
+                  <option value="real">Real Estate</option>
+                  <option value="renewable">Renewable Energy</option>
+                  <option value="retail">Retail</option>
+                  <option value="security">Security Services</option>
+                  <option value="software">Software & SaaS</option>
+                  <option value="technology">Technology & IT</option>
+                  <option value="telecommunications">Telecommunications</option>
+                  <option value="travel">Travel & Aviation</option>
+                  <option value="tV">TV Hosts & Presenters</option>
+                  <option value="weddings">Weddings & Social Events</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-msg"></span>
               </div>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Media Production checkboxes -->
-            <div class="field-group">
-              <label>Which type of media production do you need?</label>
-              <div class="checkbox-list">
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="photoshoot" />
-                  Photoshoot</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="motion-graphics" />
-                  Motion Graphics</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="design" />
-                  Design</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="video-editing" />
-                  Video Editing</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="reels" />
-                  Reels & Short Videos</label
-                >
-                <label class="checkbox-item"
-                  ><input
-                    type="checkbox"
-                    name="media_production"
-                    value="web-dev" />
-                  Web Development</label
-                >
+              <!-- Website -->
+              <div class="field-group">
+                <label for="website">Website</label>
+                <input
+                  type="url"
+                  id="website"
+                  name="website"
+                  placeholder="ex. boomit.com"
+                  required />
+                <span class="error-msg"></span>
               </div>
-              <span class="error-msg"></span>
-            </div>
-            <!-- Media Buying Budget -->
-            <div class="field-group">
-              <label for="budget"
-                >What's your estimated Media Buying Budget?</label
-              >
-              <select id="budget" name="budget" required>
-                <option value="">Select Budget</option>
-                <option value="below">Below 10K</option>
-                <option value="20k">10K – 20K</option>
-                <option value="30k">20K – 30K</option>
-                <option value="40k">30K – 40K</option>
-                <option value="50k">40K – 50K</option>
-                <option value="100k">50K – 100K</option>
-                <option value="above">Above 100K</option>
-              </select>
-              <span class="error-msg"></span>
-            </div>
-            <button type="submit">Submit</button>
-            <p class="form-note">
-              We Respond Within 24 Hours — Usually Faster.
-            </p>
-          </form>
+              <!-- Founded At -->
+              <div class="field-group">
+                <label for="founded">Founded At</label>
+                <select name="founded" id="founded">
+                  <option value="">Select Your Found time</option>
+                  <option value="startup">Startup</option>
+                  <option value="less-1">Less than 1 Year</option>
+                  <option value="1-3">1-3 Years</option>
+                  <option value="3-5">3-5 Years</option>
+                  <option value="5-10">5-10 Years</option>
+                  <option value="10+">More than 10 Years</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Social Media handles -->
+              <div class="field-group">
+                <label for="social-media">Social Media</label>
+                <input
+                  type="text"
+                  id="social-media"
+                  name="social-media"
+                  placeholder="ex. Instagram, Facebook" />
+                <span class="error-msg"></span>
+              </div>
+              <!-- Instagram link -->
+              <div class="field-group">
+                <label for="instgram">Instgram</label>
+                <input
+                  type="url"
+                  id="instgram"
+                  name="instgram"
+                  placeholder="Paste a link" />
+                <span class="error-msg"></span>
+              </div>
+              <!-- Contact Person -->
+              <div class="field-group">
+                <label for="contact-person">Contact Person</label>
+                <input
+                  type="text"
+                  id="contact-person"
+                  name="contact-person"
+                  placeholder="ex. Mohamed, Sara"
+                  required />
+                <span class="error-msg"></span>
+              </div>
+              <!-- Email -->
+              <div class="field-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="XXXXXXX@gmail.com"
+                  required />
+                <span class="error-msg"></span>
+              </div>
+              <!-- Phone -->
+              <div class="field-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+                <span class="error-msg"></span>
+              </div>
+              <!-- Active Platforms checkboxes -->
+              <div class="field-group">
+                <label>Active Platforms</label>
+                <div class="checkbox-list">
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="facebook" />
+                    Facebook</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="platforms"
+                      value="instagram" />
+                    Instagram</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="tiktok" />
+                    TikTok</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="snapchat" />
+                    Snapchat</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="twitter" />
+                    X (Twitter)</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="linkedin" />
+                    LinkedIn</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="platforms" value="youtube" />
+                    YouTube</label
+                  >
+                </div>
+                <span class="error-msg"></span>
+              </div>
+              <div class="field-group">
+                <label for="tov">Tone of Voice (TOV)</label>
+                <select id="tov" name="tov" required>
+                  <option value="">Select TOV</option>
+                  <option value="authoritative">Authoritative</option>
+                  <option value="casual">Casual</option>
+                  <option value="confident">Confident</option>
+                  <option value="creative">Creative</option>
+                  <option value="direct">Direct</option>
+                  <option value="energetic">Energetic</option>
+                  <option value="friendly">Friendly</option>
+                  <option value="inspirational">Inspirational</option>
+                  <option value="luxury">Luxury</option>
+                  <option value="minimalist">Minimalist</option>
+                  <option value="motivational">Motivational</option>
+                  <option value="premium">Premium</option>
+                  <option value="professional">Professional</option>
+                  <option value="supportive">Supportive</option>
+                  <option value="warm">Warm</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Persona -->
+              <div class="field-group">
+                <label for="persona">Persona</label>
+                <select id="persona" name="persona" required>
+                  <option value="">Select Persona</option>
+                  <option value="data-driven">Data-Driven</option>
+                  <option value="creative">Creative</option>
+                  <option value="analytical">Analytical</option>
+                  <option value="innovative">Innovative</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Target Audience -->
+              <div class="field-group">
+                <label for="audience">Target Audience</label>
+                <select name="audience" id="audience" required>
+                  <option value="">Select Audience</option>
+                  <option value="b2b">B2B (Business to Business)</option>
+                  <option value="b2c">B2C (Business to Consumer)</option>
+                  <option value="high-income">High-Income Customers</option>
+                  <option value="kids">Kids & Teens</option>
+                  <option value="local">Local Customers</option>
+                  <option value="moms">Moms</option>
+                  <option value="professionals">Professionals</option>
+                  <option value="smes">
+                    SMEs (Small & Medium Enterprises)
+                  </option>
+                  <option value="startups">Startups</option>
+                  <option value="students">Students</option>
+                  <option value="tech">Tech Users</option>
+                  <option value="tourists">Tourists & Visitors</option>
+                  <option value="wholesale">Wholesale Buyers</option>
+                  <option value="youth">Youth</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Preferred Contact Time -->
+              <div class="field-group">
+                <label for="contact-time">Preferred Contact Time</label>
+                <select name="contact-time" id="contact-time" required>
+                  <option value="">Select Time</option>
+                  <option value="08-12">08:00 AM TO 12:00 PM</option>
+                  <option value="12-16">12:00 PM TO 04:00 PM</option>
+                  <option value="16-20">04:00 PM TO 08:00 PM</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Services checkboxes -->
+              <div class="field-group">
+                <label>Services</label>
+                <div class="checkbox-list">
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="services"
+                      value="social-media-management" />
+                    Social Media Management</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="services" value="branding" />
+                    Branding</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="services" value="design" />
+                    Design</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="services"
+                      value="pr-influencer" />
+                    PR & Influencer Campaigns</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="services"
+                      value="media-buying" />
+                    Media Buying \ Meta\ Google\ TikTok</label
+                  >
+                  <label class="checkbox-item"
+                    ><input type="checkbox" name="services" value="web-dev" />
+                    Web Development</label
+                  >
+                </div>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Media Production checkboxes -->
+              <div class="field-group">
+                <label>Which type of media production do you need?</label>
+                <div class="checkbox-list">
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="photoshoot" />
+                    Photoshoot</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="motion-graphics" />
+                    Motion Graphics</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="design" />
+                    Design</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="video-editing" />
+                    Video Editing</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="reels" />
+                    Reels & Short Videos</label
+                  >
+                  <label class="checkbox-item"
+                    ><input
+                      type="checkbox"
+                      name="media_production"
+                      value="web-dev" />
+                    Web Development</label
+                  >
+                </div>
+                <span class="error-msg"></span>
+              </div>
+              <!-- Media Buying Budget -->
+              <div class="field-group">
+                <label for="budget"
+                  >What's your estimated Media Buying Budget?</label
+                >
+                <select id="budget" name="budget" required>
+                  <option value="">Select Budget</option>
+                  <option value="below">Below 10K</option>
+                  <option value="20k">10K – 20K</option>
+                  <option value="30k">20K – 30K</option>
+                  <option value="40k">30K – 40K</option>
+                  <option value="50k">40K – 50K</option>
+                  <option value="100k">50K – 100K</option>
+                  <option value="above">Above 100K</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <button type="submit">Submit</button>
+              <p class="form-note">
+                We Respond Within 24 Hours — Usually Faster.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
       <!-- end form section -->
@@ -479,6 +486,7 @@
       </footer>
       <!-- end footer -->
     </main>
+    <script src="../js/form.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

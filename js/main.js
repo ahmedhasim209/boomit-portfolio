@@ -31,7 +31,7 @@ const iti = window.intlTelInput(phoneInput, {
 
 const form = document.getElementById("contact-form");
 
-// validation rules
+// validation briefRules
 const rules = {
   company: {
     required: true,
