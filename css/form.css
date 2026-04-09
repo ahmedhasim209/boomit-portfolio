@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: var(--font-Futuru);
 }
+/* start landing section */
 main .landing {
   background-color: var(--secondary-color);
 }
@@ -31,3 +32,16 @@ main .landing .heading p {
   padding-bottom: 10px;
   margin: 0;
 }
+/* end landing section */
+/* start form section */
+main .form {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+main .form .heading {
+  padding-bottom: 25px;
+}
+main .form .heading h2 {
+  text-align: left;
+}
+/* end form section */
