@@ -109,6 +109,10 @@
   background-color: var(--primary-color);
   color: #ffffff;
 }
+.hero .binocular-area .buttons-holder .booking a {
+  color: #ffffff;
+  text-decoration: none;
+}
 .hero .binocular-area .buttons-holder .speak {
   background-color: transparent;
   color: var(--primary-color);
@@ -321,6 +325,7 @@ main .services {
   padding: 80px 0;
 }
 main .services .services-carts .cart {
+  margin: 0 auto;
   width: 330px;
   height: 360px;
   background-color: transparent;
@@ -610,10 +615,6 @@ main .booking-section .binocular-space .circles .circle {
   border-radius: 50%;
   background-color: var(--secondary-color);
 }
-/* main .booking-section .binocular-area .circles .right {
-}
-main .booking-section .binocular-area .circles .left {
-} */
 main .booking-section .binocular-space .img-holder {
   width: 100%;
   overflow: hidden;
