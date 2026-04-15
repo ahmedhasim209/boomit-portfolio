@@ -1,0 +1,42 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+
+main .landing .heading h1 {
+  font-family: var(--font-berlinBoldX);
+  font-size: 34px;
+  line-height: 124%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 0%;
+}
+main .landing .heading p {
+  color: #404040;
+  font-weight: 400;
+  text-align: start;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0%;
+}
+main .landing .circle {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+  margin-bottom: 40px;
+}
+main .landing .circle .right,
+main .landing .circle .left {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
