@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: var(--font-Futuru);
 }
-
+/* start landing section */
 main .landing .heading h1 {
   font-family: var(--font-berlinBoldX);
   font-size: 34px;
@@ -40,3 +40,130 @@ main .landing .circle .left {
   border-radius: 50%;
   background-color: var(--primary-color);
 }
+/* end landing section */
+/* start blog section */
+main .blogs {
+  margin: 40px 0 80px;
+}
+main .blogs .blogs-holder {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+main .blogs .blogs-holder .blogs-cart {
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+main .blogs .blogs-holder .blogs-cart:hover {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  margin: 0 auto;
+}
+main .blogs .blogs-holder .blogs-cart .img-holder {
+  margin: 0 auto;
+  width: 265px;
+  height: 225px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+main .blogs .blogs-holder .blogs-cart .img-holder img {
+  width: 100%;
+  height: 100%;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content h4 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content .date {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 7%;
+  color: #404040;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content p.popular {
+  font-size: 12px;
+  background-color: #ffe147;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+/* end blog section */
+/* start booking section */
+main .booking {
+  margin-bottom: 120px;
+}
+main .booking .binocular-space {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .booking .binocular-space .circles {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0;
+}
+main .booking .binocular-space .circles .circle {
+  align-self: flex-start;
+  justify-self: start;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+main .booking .binocular-space .img-holder {
+  width: 100%;
+  overflow: hidden;
+}
+main .booking .binocular-space .img-holder img {
+  max-width: 100%;
+  margin-bottom: -5px;
+  width: 218px;
+  position: relative;
+  z-index: 2;
+  width: 350px;
+}
+main .booking .binocular-space .buttons-holder {
+  width: 100%;
+}
+main .booking .buttons-holder button {
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+main .booking .buttons-holder p {
+  color: #404040;
+  font-family: var(Futuru);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* end booking section */
