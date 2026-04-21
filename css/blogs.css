@@ -82,6 +82,13 @@ main .blogs .blogs-holder .blogs-cart .blog-content h4 {
   text-transform: capitalize;
   margin-bottom: 40px;
 }
+main .blogs .blogs-holder .blogs-cart .blog-content h4 a {
+  text-decoration: none;
+  color: #020202;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content h4 a:hover {
+  text-decoration: underline;
+}
 main .blogs .blogs-holder .blogs-cart .blog-content .date {
   display: flex;
   justify-content: start;
