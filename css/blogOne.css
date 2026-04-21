@@ -1,0 +1,265 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+/* start landing section */
+main .landing {
+  margin-bottom: 50px;
+}
+main .landing .back-blogs {
+  margin-bottom: 20px;
+}
+main .landing .back-blogs h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+main .landing .back-blogs h6 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+main .landing .back-blogs h6 a i {
+  font-size: 8px;
+  text-align: center;
+}
+main .landing .heading {
+  margin-bottom: 40px;
+}
+main .landing .heading h1 {
+  font-family: var(--font-berlinBold);
+  font-size: 34px;
+  line-height: 124%;
+  text-align: left;
+  text-transform: uppercase;
+}
+main .landing .heading p {
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  color: #020202;
+}
+main .landing .blog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+main .landing .blog-content .mistake-one,
+main .landing .blog-content .mistake-two,
+main .landing .blog-content .mistake-three,
+main .landing .blog-content .mistake-four,
+main .landing .blog-content .mistake-five,
+main .landing .blog-content .the-fix,
+main .landing .blog-content .conclusion {
+  padding-left: 20px;
+  border-left: 3px solid var(--primary-color);
+}
+
+main .landing .blog-content .mistake-one h3,
+main .landing .blog-content .mistake-two h3,
+main .landing .blog-content .mistake-three h3,
+main .landing .blog-content .mistake-four h3,
+main .landing .blog-content .mistake-five h3,
+main .landing .blog-content .the-fix h3,
+main .landing .blog-content .conclusion h3 {
+  font-family: var(--font-berlinBold);
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+main .landing .blog-content .mistake-one h4,
+main .landing .blog-content .mistake-two h4,
+main .landing .blog-content .mistake-three h4,
+main .landing .blog-content .mistake-four h4,
+main .landing .blog-content .mistake-five h4,
+main .landing .blog-content .the-fix h4,
+main .landing .blog-content .conclusion h4 {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+main .landing .blog-content .mistake-one p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  line-height: 153%;
+}
+main .landing .blog-content .mistake-one p i.fa-xmark {
+  color: red;
+  font-size: 20px;
+}
+main .landing .blog-content .mistake-one p i.fa-square-check {
+  color: rgb(0, 181, 0);
+  font-size: 15px;
+}
+main .landing .blog-content .mistake-two li,
+main .landing .blog-content .mistake-four li,
+main .landing .blog-content .the-fix li {
+  color: #404040;
+  margin-left: 30px;
+  line-height: 28.8px;
+}
+main .landing .blog-content .mistake-two li::marker,
+main .landing .blog-content .mistake-four li::marker,
+main .landing .blog-content .the-fix li::marker {
+  color: #bd0a1f;
+  font-size: 8px;
+}
+main .landing .blog-content .mistake-three .bad {
+  background-color: #ffeeee;
+  padding: 10px;
+  border-left: 3px solid var(--primary-color);
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .landing .blog-content .mistake-three .bad h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bd0a1f;
+}
+main .landing .blog-content .mistake-three .bad h5 i.fa-xmark {
+  color: red;
+  font-size: 20px;
+}
+main .landing .blog-content .mistake-three .bad p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+main .landing .blog-content .mistake-three .good {
+  background-color: #eeffee;
+  padding: 10px;
+  border-left: 3px solid #00aa99;
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .landing .blog-content .mistake-three .good h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00aa99;
+}
+main .landing .blog-content .mistake-three .good h5 i.fa-square-check {
+  color: rgb(0, 181, 0);
+  font-size: 15px;
+}
+main .landing .blog-content .mistake-three .good p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+main .landing .blog-content .conclusion {
+  background-color: #bd0a1f0d;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .landing .blog-content .conclusion p {
+  color: #404040;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+main .landing .buttons-holder {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+}
+main .landing .buttons-holder button {
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+main .landing .buttons-holder .booking {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+main .landing .buttons-holder .booking a {
+  color: #ffffff;
+  text-decoration: none;
+}
+main .landing .buttons-holder .speak {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+  border: 2px solid var(--primary-color);
+}
+/* end landing section */
+/* start insights section */
+main .insights {
+  margin-bottom: 80px;
+}
+main .insights .heading {
+  margin-bottom: 20px;
+}
+main .insights .heading h3 {
+  font-family: var(--font-berlinBold);
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+main .insights .more-blogs {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  row-gap: 30px;
+}
+main .insights .more-blogs .blog2 h4,
+main .insights .more-blogs .blog3 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #020202;
+  margin-bottom: 15px;
+}
+main .insights .more-blogs .blog2 h5,
+main .insights .more-blogs .blog3 h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #020202;
+  margin-bottom: 10px;
+}
+main .insights .more-blogs .blog2 p,
+main .insights .more-blogs .blog3 p {
+  cursor: pointer;
+}
+main .insights .more-blogs .blog2 p a,
+main .insights .more-blogs .blog3 p a {
+  text-decoration: none;
+  color: #bd0a1f;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* end insights section */
