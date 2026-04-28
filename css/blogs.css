@@ -138,7 +138,6 @@ main .booking .binocular-space .circles .circle {
   background-color: var(--secondary-color);
 }
 main .booking .binocular-space .img-holder {
-  width: 100%;
   overflow: hidden;
 }
 main .booking .binocular-space .img-holder img {

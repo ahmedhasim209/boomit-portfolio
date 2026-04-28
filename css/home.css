@@ -557,8 +557,7 @@ main .insights {
   height: 258px;
   margin-bottom: 20px;
   border-radius: 15px;
-  background-image: url(../assets/images/home/insights-img.jpg);
-  background-size: cover;
+  overflow: hidden;
 }
 .insights-carts .cart::before {
   content: "";
@@ -569,19 +568,9 @@ main .insights {
   height: 100%;
   background: linear-gradient(0 deg, #00000099, #00000000);
 }
-.insights-carts .cart h4 {
+.insights-carts .cart img {
   width: 100%;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  text-align: left;
-  z-index: 1;
-  font-family: var(--font-Futuru);
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 126%;
-  letter-spacing: 5%;
-  text-transform: capitalize;
-  color: #ffffff;
+  height: 100%;
 }
 /* end insights section */
 /* start booking section  */
@@ -616,7 +605,6 @@ main .booking-section .binocular-space .circles .circle {
   background-color: var(--secondary-color);
 }
 main .booking-section .binocular-space .img-holder {
-  width: 100%;
   overflow: hidden;
 }
 main .booking-section .binocular-space .img-holder img {
