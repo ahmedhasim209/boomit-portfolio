@@ -80,7 +80,7 @@ main nav.fixed {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 80%;
   z-index: 1000;
 }
 main nav a img {
@@ -290,8 +290,11 @@ main footer .newsletter button {
   color: var(--primary-color);
   border: none;
   border-radius: 10px;
-  /* height: 50px; */
   padding: 16px 17px;
+  cursor: pointer;
+}
+main footer .newsletter button:hover {
+  background-color: #ffffff;
 }
 .icons {
   width: 100%;
@@ -312,6 +315,7 @@ main footer .newsletter button {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 /* media query */
 /* for mobile & smaller Screens */
