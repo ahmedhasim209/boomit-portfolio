@@ -117,6 +117,7 @@
 .hero .buttons-holder .booking {
   background-color: var(--primary-color);
   color: #ffffff;
+  cursor: pointer;
 }
 .hero .buttons-holder .booking a {
   color: #ffffff;
@@ -128,6 +129,18 @@
   font-weight: 600;
   text-decoration: underline;
   border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+.hero .buttons-holder .booking:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+}
+.hero .buttons-holder .booking:active {
+  background-color: #931213;
+  border: 1px solid #ffffff;
+}
+.hero .buttons-holder .speak:hover {
+  background-color: #ffc9bf70;
 }
 .hero .paragraph-area {
   width: 100%;
@@ -532,6 +545,9 @@ main .consultation .booking button {
   margin-bottom: 10px;
   text-decoration: underline;
 }
+main .consultation .booking button:hover {
+  background-color: #ffc9bf70;
+}
 main .consultation .booking p {
   color: #bababa;
   font-size: 12px;
@@ -671,6 +687,10 @@ main .services .button-holder button {
   color: white;
   background-color: var(--primary-color);
   border: none;
+}
+main .services .button-holder button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
 }
 /* media query */
 /* for mobile & smaller Screens */
@@ -834,6 +854,10 @@ main .testimonials .booking button {
   border-radius: 10px;
   text-transform: capitalize;
   font-weight: 800;
+}
+main .testimonials .booking button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
 }
 /* media query */
 /* for mobile & smaller Screens */
@@ -1012,6 +1036,10 @@ main .booking-section .buttons-holder button {
   text-transform: capitalize;
   font-weight: 800;
   margin-bottom: 10px;
+}
+main .booking-section .buttons-holder button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
 }
 main .booking-section .buttons-holder p {
   color: #404040;
