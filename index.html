@@ -28,7 +28,7 @@
       <div class="container">
         <!-- start Hero section -->
         <!-- start navbar -->
-        <nav>
+        <nav id="project-navbar">
           <a href="index.html"
             ><img src="assets/boomit-logo.svg" alt="boomit-logo"
           /></a>
@@ -37,14 +37,19 @@
               <i class="fa-solid fa-xmark"></i>
             </div>
             <ul class="pages">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pages/services.html">Services</a></li>
-              <li><a href="pages/blogs.html">Blogs</a></li>
-              <li><a href="pages/contact.html">contact</a></li>
-              <li><a href="pages/about.html">About us</a></li>
+              <li><a href="index.html" data-page="home">Home</a></li>
+              <li>
+                <a href="pages/services.html" data-page="services">Services</a>
+              </li>
+              <li><a href="pages/blogs.html" data-page="blogs">Blogs</a></li>
+              <li>
+                <a href="pages/contact.html" data-page="contact">contact</a>
+              </li>
+              <li><a href="pages/about.html" data-page="about">About us</a></li>
             </ul>
           </div>
           <i class="fa-solid fa-bars"></i>
+          <button class="boomit"><a href="pages/form.html">BOOM IT!</a></button>
         </nav>
         <!-- end navbar -->
         <section class="hero">
@@ -65,6 +70,8 @@
                 src="assets/images/home/hero-glasses.webp"
                 alt="binoculars" />
             </div>
+          </div>
+          <div class="content-area">
             <div class="buttons-holder">
               <button class="booking">
                 <a href="pages/form.html">Book a Free Consultation</a>
@@ -72,17 +79,18 @@
               <button class="speak">Speak to a Growth Partner</button>
               <!-- Going to whatsapp 01036090830 -->
             </div>
-          </div>
-          <div class="paragraph-area">
-            <p>
-              Boomit is a strategic growth agency helping B2B and consumer
-              brands across Egypt & the GCC scale with clarity, precision, and
-              premium execution.We combine market insight, brand storytelling,
-              smart systems, and performance marketing to build brands people
-              trust , and results you can measure.Our Services: SEO, Performance
-              Marketing, Social Media management , UGC, Influencers marketing ,
-              B2B Lead Generation, Websites & Landing Pages.
-            </p>
+            <div class="paragraph-area">
+              <p>
+                Boomit is a strategic growth agency helping B2B and consumer
+                brands across Egypt & the GCC scale with clarity, precision, and
+                premium execution.We combine market insight, brand storytelling,
+                smart systems, and performance marketing to build brands people
+                trust , and results you can measure.Our Services: SEO,
+                Performance Marketing, Social Media management , UGC,
+                Influencers marketing , B2B Lead Generation, Websites & Landing
+                Pages.
+              </p>
+            </div>
           </div>
         </section>
       </div>
@@ -145,7 +153,7 @@
             </div>
           </div>
           <p class="second">
-            Strategy first. Creative with purpose.<br />Data without noise.
+            Strategy first. Creative with purpose. Data without noise.
           </p>
         </div>
       </section>
@@ -168,33 +176,55 @@
             <h3>We partner with brands that want</h3>
             <div class="plans-flex">
               <div class="plan">
-                <p>
-                  Strategy <br />
-                  backed by <br />
-                  insight
-                </p>
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Strategy backed by insight</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
               </div>
               <div class="plan">
-                <p>
-                  Content <br />
-                  backed by <br />
-                  psychology
-                </p>
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Content backed by psychology</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
               </div>
               <div class="plan">
-                <p>
-                  Ads backed <br />
-                  by data
-                </p>
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Ads backed by data</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
               </div>
               <div class="plan">
-                <p>
-                  Growth<br />
-                  backed by<br />
-                  intention
-                </p>
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Growth backed by intention</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
               </div>
             </div>
+            <p class="manage">We don’t “manage accounts” We elevate brands.</p>
           </div>
         </div>
       </section>
@@ -466,7 +496,9 @@
               </div>
             </div>
           </div>
-          <button>View All</button>
+          <div class="button-holder">
+            <button>View All</button>
+          </div>
         </div>
       </section>
       <!-- end Services section -->
@@ -534,13 +566,13 @@
             <h2>Insights for founders and brand teams</h2>
           </div>
           <div class="insights-carts">
-            <div class="cart">
+            <div class="cart cart1">
               <img src="assets/images/home/blog-one.webp" alt="" />
             </div>
-            <div class="cart">
+            <div class="cart cart2">
               <img src="assets/images/home/blog-two.webp" alt="" />
             </div>
-            <div class="cart">
+            <div class="cart cart3">
               <img src="assets/images/home/blog-three.webp" alt="" />
             </div>
           </div>
@@ -560,20 +592,22 @@
               strategy conversation that brings clarity and direction.
             </p>
           </div>
-          <div class="binocular-space">
-            <div class="circles">
-              <span class="circle left"></span>
-              <span class="circle right"></span>
+          <div class="content-holder">
+            <div class="binocular-space">
+              <div class="circles">
+                <span class="circle left"></span>
+                <span class="circle right"></span>
+              </div>
+              <div class="img-holder">
+                <img
+                  src="assets/images/home/hero-glasses.webp"
+                  alt="binoculars" />
+              </div>
             </div>
-            <div class="img-holder">
-              <img
-                src="assets/images/home/hero-glasses.webp"
-                alt="binoculars" />
+            <div class="buttons-holder">
+              <button>Book A Meeting</button>
+              <p>We respond within 24 hours — usually faster.</p>
             </div>
-          </div>
-          <div class="buttons-holder">
-            <button>Book A Meeting</button>
-            <p>We respond within 24 hours — usually faster.</p>
           </div>
         </div>
       </section>
@@ -591,22 +625,28 @@
               start with a conversation that brings clarity and momentum
             </p>
           </div>
-          <div class="newsletter">
-            <div class="input-flex">
-              <label>Subscribe to Newsletter</label>
-              <input type="text" placeholder="Company Name" />
+          <div class="newslettr-icons-holder">
+            <div class="newsletter">
+              <div class="input-flex">
+                <label>Subscribe to Newsletter</label>
+                <input type="text" placeholder="Company Name" />
+              </div>
+              <button type="submit">Subscribe</button>
             </div>
-            <button type="submit">Subscribe</button>
-          </div>
-          <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-tiktok"></i>
+            <div class="icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
           </div>
         </div>
       </footer>
       <!-- end footer -->
     </main>
+    <script>
+      const CURRENT_PAGE = "home";
+    </script>
     <script src="js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
   </body>
 </html>
