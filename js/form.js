@@ -19,6 +19,29 @@ closeBtn.addEventListener("click", () => {
   document.body.style.overflow = "";
 });
 
+//Handle fixed navbar on scroll for ipad pro and desktop screens or above
+const navBar = document.getElementById("project-navbar");
+const navBarOffset = navBar.offsetTop;
+const navBarHeight = navBar.offsetHeight;
+const placeholder = document.createElement("div");
+placeholder.style.height = navBarHeight + "px";
+placeholder.style.margin = "50px 0";
+placeholder.style.display = "none";
+navBar.parentNode.insertBefore(placeholder, navBar.nextSibling);
+
+window.addEventListener("scroll", () => {
+  if (
+    window.matchMedia("(min-width: 769px)").matches &&
+    window.scrollY > navBarOffset
+  ) {
+    navBar.classList.add("fixed");
+    placeholder.style.display = "block"; // fill the gap
+  } else {
+    navBar.classList.remove("fixed");
+    placeholder.style.display = "none"; // remove the gap
+  }
+});
+
 // intl-tel-input setup
 
 const phoneInputEl = document.getElementById("phone");

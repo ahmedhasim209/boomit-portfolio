@@ -28,7 +28,7 @@
     <main>
       <div class="container">
         <!-- start navbar -->
-        <nav>
+        <nav id="project-navbar">
           <a href="../../index.html"
             ><img src="../../assets/boomit-logo.svg" alt="boomit-logo"
           /></a>
@@ -37,14 +37,17 @@
               <i class="fa-solid fa-xmark"></i>
             </div>
             <ul class="pages">
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../services.html">Services</a></li>
-              <li><a href="../blogs.html">Blogs</a></li>
-              <li><a href="../contact.html">contact</a></li>
-              <li><a href="../about.html">About us</a></li>
+              <li><a href="../../index.html" data-page="home">Home</a></li>
+              <li>
+                <a href="../services.html" data-page="services">Services</a>
+              </li>
+              <li><a href="../blogs.html" data-page="blogs">Blogs</a></li>
+              <li><a href="../contact.html" data-page="contact">contact</a></li>
+              <li><a href="../about.html" data-page="about">About us</a></li>
             </ul>
           </div>
           <i class="fa-solid fa-bars"></i>
+          <button class="boomit"><a href="../form.html">BOOM IT!</a></button>
         </nav>
         <!-- end navbar -->
       </div>
@@ -217,22 +220,28 @@
               start with a conversation that brings clarity and momentum
             </p>
           </div>
-          <div class="newsletter">
-            <div class="input-flex">
-              <label>Subscribe to Newsletter</label>
-              <input type="text" placeholder="Company Name" />
+          <div class="newslettr-icons-holder">
+            <div class="newsletter">
+              <div class="input-flex">
+                <label>Subscribe to Newsletter</label>
+                <input type="text" placeholder="Company Name" />
+              </div>
+              <button type="submit">Subscribe</button>
             </div>
-            <button type="submit">Subscribe</button>
-          </div>
-          <div class="icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-tiktok"></i>
+            <div class="icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
           </div>
         </div>
       </footer>
       <!-- end footer -->
     </main>
+    <script>
+      const CURRENT_PAGE = "blogs";
+    </script>
     <script src="../../js/main.js"></script>
+    <script src="../../js/active-nav.js"></script>
   </body>
 </html>

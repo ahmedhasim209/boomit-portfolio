@@ -9,6 +9,7 @@
 }
 /* start landing section */
 main .landing {
+  padding-top: 0.1px;
   background-color: var(--secondary-color);
 }
 main .landing .heading {

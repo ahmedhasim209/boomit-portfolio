@@ -53,6 +53,36 @@ main nav {
   justify-content: space-between;
   align-items: center;
 }
+main nav .boomit {
+  border: none;
+  background-color: var(--primary-color);
+  width: 135px;
+  height: 35px;
+  border-radius: 18px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+main nav .boomit a {
+  text-decoration: none;
+  font-family: var(--font-Futuru);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  text-align: center;
+}
+main nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 1000;
+}
 main nav a img {
   max-width: 100%;
   max-height: 100%;
@@ -101,6 +131,97 @@ main nav i {
   color: var(--primary-color);
   font-size: 20px;
 }
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* custom styling for the boomit button on hover for tablets */
+@media (769px <= width <= 940px) {
+  main nav .boomit:hover a {
+    border: 1px solid #ffffff;
+    background-color: #910707;
+    padding: 7px 14px;
+    border-radius: 18px;
+  }
+}
+@media (941px <= width <= 1024px) {
+  main nav .boomit:hover a {
+    border: 1px solid #ffffff;
+    background-color: #910707;
+    padding: 7px 19px;
+    border-radius: 18px;
+  }
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main nav {
+    padding: 0 20px;
+    margin: 50px 0 50px 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0.15) 100%
+    );
+    height: 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  main nav .boomit {
+    display: flex;
+  }
+  main nav .boomit:active {
+    background-color: #3d0505;
+    border: 1px solid #ffffff;
+  }
+  main nav .boomit:active a {
+    background-color: #3d0505;
+    border: none;
+  }
+  .toggle-list {
+    position: relative;
+    top: 0;
+    right: 0%;
+    background-color: transparent;
+    height: fit-content;
+  }
+  .toggle-list .close-btn {
+    display: none;
+  }
+  i.fa-bars {
+    display: none;
+  }
+  main nav .toggle-list ul.pages {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  main nav .toggle-list ul.pages li:hover a {
+    color: #d52a3e;
+  }
+  main nav .toggle-list ul.pages li a.active {
+    color: #610510;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}
 /* start nav */
 /* start footer */
 main footer {
@@ -121,6 +242,10 @@ main footer .heading p {
   color: #e2e1e5;
   line-height: 153%;
   letter-spacing: 5%;
+}
+main footer .newslettr-icons-holder {
+  display: flex;
+  flex-direction: column;
 }
 main footer .newsletter {
   display: flex;
@@ -152,7 +277,7 @@ main footer .newsletter .input-flex input {
   margin-right: 10px;
 }
 main footer .newsletter .input-flex input::placeholder {
-  color: #ffffff1a;
+  color: rgba(255, 255, 255, 0.5);
 }
 main footer .newsletter button {
   font-family: var(--font-Futuru);
@@ -187,5 +312,38 @@ main footer .newsletter button {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+}
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main footer .newslettr-icons-holder {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main footer .newslettr-icons-holder .newsletter {
+    margin: 0;
+  }
+  main footer .newsletter .input-flex input {
+    width: 330px;
+  }
+  main footer .newslettr-icons-holder .icons {
+    margin: 0;
+    margin-bottom: 12.5px;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
 }
 /* end footer */
