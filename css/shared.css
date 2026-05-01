@@ -159,6 +159,9 @@ main nav i {
 /* for Laptops/Small Desktops Screens */
 @media (769px <= width <= 1024px) {
   /* for ipad pro and laptops */
+  body {
+    overflow-x: none;
+  }
   main nav {
     padding: 0 20px;
     margin: 50px 0 50px 0;
