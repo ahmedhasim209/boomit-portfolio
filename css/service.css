@@ -68,67 +68,6 @@ main .services .services-carts-holder .cart .float {
   z-index: 0;
   rotate: 10deg;
 }
-/*
-section.services .one {
-  top: -250px;
-  left: 0;
-}
-section.services .two {
-  top: 650px;
-  left: 45px;
-  rotate: 10deg;
-}
-section.services .three {
-  top: 1475px;
-  left: 60px;
-  rotate: 53deg;
-}
-section.services .four {
-  top: 2275px;
-  left: 70px;
-  rotate: 10deg;
-  transform: scaleX(-1);
-}
-section.services .five {
-  top: 3015px;
-  left: 55px;
-  rotate: 10deg;
-}
-section.services .six {
-  width: 775px;
-  height: 775px;
-  top: 3595px;
-  left: 35px;
-  rotate: 10deg;
-}
-section.services .seven {
-  width: 745px;
-  height: 745px;
-  top: 4490px;
-  left: 15px;
-  rotate: 15deg;
-}
-section.services .eight {
-  width: 500px;
-  height: 500px;
-  top: 5425px;
-  left: 30px;
-  rotate: 15deg;
-}
-section.services .nine {
-  width: 500px;
-  height: 500px;
-  top: 6120px;
-  left: 30px;
-  rotate: 25deg;
-}
-section.services .ten {
-  width: 900px;
-  height: 900px;
-  top: 6555px;
-  left: -100px;
-  rotate: 25deg;
-} */
 main .services .services-carts-holder .cart .icon-holder {
   position: relative;
   z-index: 2;
@@ -273,10 +212,40 @@ main .services .buttons-holder .speak:hover {
     column-gap: 20px;
   }
 }
+
 /* for Desktops/Large Screens */
+@media (min-width: 1025px) {
+  /* for ipad pro and laptops */
+  main .services .services-carts-holder .cart {
+    width: 80%;
+  }
+  section.heading h1 {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+  main .services .buttons-holder {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
+/* for Desktops */
 @media (1025px <= width <= 1200px) {
+  main .services .services-carts-holder .cart .float {
+    left: 65%;
+    top: -49%;
+  }
 }
-/* for TVs/Wide Monitors */
+/* Large Screens */
 @media (min-width: 1201px) {
+  main .services .services-carts-holder .cart .float {
+    left: 75%;
+    top: -49%;
+  }
 }
-/* 865 */
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
+/* for TVs/Wide Monitors */
+/* @media (min-width: 1201px) {
+} */
