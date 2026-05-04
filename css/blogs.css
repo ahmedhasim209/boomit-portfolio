@@ -263,6 +263,15 @@ main .booking .buttons-holder button {
   text-transform: capitalize;
   font-weight: 800;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+main .booking .buttons-holder button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+}
+main .booking .buttons-holder button:active {
+  background-color: #931213;
+  border: 1px solid #ffffff;
 }
 main .booking .buttons-holder p {
   color: #404040;
@@ -275,3 +284,29 @@ main .booking .buttons-holder p {
   text-align: center;
 }
 /* end booking section */
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .booking .buttons-holder {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .booking .buttons-holder button {
+    width: 100%;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}
+/* end blog section */

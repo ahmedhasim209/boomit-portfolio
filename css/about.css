@@ -43,6 +43,35 @@ main .landing .circle .left {
   border-radius: 50%;
   background-color: var(--primary-color);
 }
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .landing .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  main .landing .heading h1 {
+    margin-top: 0;
+  }
+  main .landing .heading p {
+    width: 180px;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}
 /* end landing section  */
 /* start vision section */
 main .vision {
@@ -87,6 +116,45 @@ main .vision .carts .cart .content h4 {
   text-transform: capitalize;
   text-align: left;
 }
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .vision .carts {
+    display: grid;
+    grid-template-areas:
+      "cart1 cart2"
+      "cart3 cart3";
+    column-gap: 20px;
+  }
+  main .vision .carts .cart {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  main .vision .carts .cart1 {
+    grid-area: cart1;
+  }
+  main .vision .carts .cart2 {
+    grid-area: cart2;
+  }
+  main .vision .carts .cart3 {
+    grid-area: cart3;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}
 /* end vision section */
 /* start we combine section */
 main .combine .heading {
@@ -106,21 +174,23 @@ main .combine .combines {
   padding-bottom: 90px;
 }
 main .combine .combines .combine-cart {
-  padding: 20px 40px;
+  padding: 10px 25px;
   background: linear-gradient(
-    115deg,
-    #f9f8f0,
-    #918f5c00,
-    #918f5c00,
-    #918f5c00,
-    #918f5c00,
-    #918f5c00
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.15) 100%
   );
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
   border-radius: 11px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: fit-content;
+  height: 90px;
 }
 main .combine .combines .combine-cart h3 {
   font-family: var(--font-Futuru);
@@ -137,6 +207,32 @@ main .combine .combines .combine-cart i {
   padding: 5px;
   border-radius: 7px;
   color: #fff;
+}
+main .combine .q-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+main .combine .q-holder .qs h3 {
+  text-align: start;
+  font-family: var(--font-Futuru);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+main .combine .q-holder .qs h4 {
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 153%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
 }
 main .combine .buttons-holder {
   display: flex;
@@ -158,6 +254,7 @@ main .combine .buttons-holder button {
 main .combine .buttons-holder .booking {
   background-color: var(--primary-color);
   color: #ffffff;
+  cursor: pointer;
 }
 main .combine .buttons-holder .speak {
   background-color: transparent;
@@ -165,5 +262,66 @@ main .combine .buttons-holder .speak {
   font-weight: 600;
   text-decoration: underline;
   border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+main .combine .buttons-holder .booking:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+}
+main .combine .buttons-holder .booking:active {
+  background-color: #931213;
+  border: 1px solid #ffffff;
+}
+main .combine .buttons-holder .speak:hover {
+  background-color: #ffc9bf70;
 }
 /* end we combine section */
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .combine .combines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  main .combine .q-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  main .combine .q-holder .qs {
+    width: 33%;
+  }
+  main .combine .buttons-holder {
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .combine .buttons-holder .booking:hover {
+    background-color: #cc2236;
+    box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+  }
+  main .combine .buttons-holder .booking:active {
+    background-color: #931213;
+    border: 1px solid #ffffff;
+  }
+  main .combine .buttons-holder .speak:hover {
+    background-color: #ffc9bf70;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}

@@ -38,6 +38,8 @@ main .landing .heading p {
 main .form {
   padding-top: 35px;
   padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 main .form .heading {
   padding-bottom: 25px;
@@ -144,7 +146,7 @@ main
   cursor: pointer;
   flex-shrink: 0;
   position: relative;
-  accent-color: #34c759;
+  accent-color: var(--primary-color);
   transition:
     background 0.2s,
     border-color 0.2s;
@@ -171,3 +173,30 @@ main .form .form-area form p {
   color: #bababa;
 }
 /* end form section */
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+@media (min-width: 768px) {
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .form .form-area form .field-group {
+    width: 60%;
+  }
+  main .form .form-area form button,
+  main .form .form-area form p {
+    width: 60%;
+  }
+}
+/* for Desktops/Large Screens */
+@media (1025px <= width <= 1200px) {
+}
+/* for TVs/Wide Monitors */
+@media (min-width: 1201px) {
+}
