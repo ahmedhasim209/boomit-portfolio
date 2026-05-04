@@ -248,3 +248,84 @@ briefForm.addEventListener("submit", async (e) => {
   btn.disabled = true;
   btn.textContent = "Sending...";
 });
+
+// Handle dot pattern drawing on the right side of the form section for tablets screens and above
+function drawDotPattern() {
+  const formSection = document.querySelector("main .form");
+  if (!formSection) return;
+
+  let canvas = formSection.querySelector(".dot-pattern-canvas");
+  if (!canvas) {
+    canvas = document.createElement("canvas");
+    canvas.classList.add("dot-pattern-canvas");
+    canvas.style.cssText =
+      "position:absolute; top:0; right:10%; pointer-events:none; z-index:1;";
+    formSection.style.position = "relative";
+    formSection.style.overflow = "hidden";
+    formSection.appendChild(canvas);
+  }
+
+  const width = window.innerWidth;
+
+  const config =
+    width <= 768 ? null
+    : width <= 1024 ? { dot: 18, colSpacing: 28, padding: 10 }
+    : { dot: 23, colSpacing: 36, padding: 12 };
+
+  if (!config) {
+    canvas.style.display = "none";
+    return;
+  }
+
+  canvas.style.display = "block";
+
+  const { dot, colSpacing, padding } = config;
+  const RADIUS = dot / 2;
+  const GAP = Math.round(dot * 0.09);
+  const COMP_GAP = Math.round(dot * 0.3);
+
+  const patternWidth = dot + colSpacing + dot;
+  const stripWidth = patternWidth + padding * 2;
+
+  canvas.width = stripWidth;
+  canvas.height = formSection.offsetHeight;
+
+  const ctx = canvas.getContext("2d");
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const centerX = padding + RADIUS;
+
+  let y = RADIUS;
+  let componentIndex = 0;
+
+  while (y - RADIUS < canvas.height) {
+    for (let d = 0; d < 2; d++) {
+      const cy = y + d * (dot + GAP);
+      if (cy + RADIUS > canvas.height) break;
+
+      for (let col = 0; col < 2; col++) {
+        const cx = centerX + col * colSpacing;
+        const isSolid = componentIndex % 2 === 0 ? col === 0 : col === 1;
+
+        ctx.beginPath();
+        ctx.arc(cx, cy, RADIUS, 0, Math.PI * 2);
+
+        if (isSolid) {
+          ctx.fillStyle = "#000000";
+          ctx.fill();
+        } else {
+          ctx.fillStyle = "transparent";
+          ctx.strokeStyle = "#000000";
+          ctx.lineWidth = Math.max(1, dot * 0.065);
+          ctx.stroke();
+        }
+      }
+    }
+
+    y += dot + GAP + dot + COMP_GAP;
+    componentIndex++;
+  }
+}
+
+drawDotPattern();
+window.addEventListener("resize", drawDotPattern);
