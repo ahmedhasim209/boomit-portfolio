@@ -156,9 +156,8 @@ main nav i {
     border-radius: 18px;
   }
 }
-/* for Laptops/Small Desktops Screens */
-@media (769px <= width <= 1024px) {
-  /* for ipad pro and laptops */
+/* navbar styling for ipad pro and laptops and desktops or above screens */
+@media (min-width: 769px) {
   body {
     overflow-x: none;
   }
@@ -221,9 +220,31 @@ main nav i {
 }
 /* for Desktops/Large Screens */
 @media (1025px <= width <= 1200px) {
+  main nav .boomit:hover a {
+    border: 1px solid #ffffff;
+    background-color: #910707;
+    padding: 7px 19px;
+    border-radius: 18px;
+  }
 }
 /* for TVs/Wide Monitors */
 @media (min-width: 1201px) {
+  /* .container {
+    width: 80%;
+  } */
+  /* main nav.fixed {
+    width: 60%;
+  } */
+  main nav .boomit:hover a {
+    border: 1px solid #ffffff;
+    background-color: #910707;
+    padding: 7px 16px;
+    border-radius: 18px;
+  }
+  main nav .boomit:active a {
+    background-color: #3d0505;
+    border: none;
+  }
 }
 /* start nav */
 /* start footer */
@@ -328,9 +349,8 @@ main footer .newsletter button:hover {
 @media (481px <= width <= 768px) {
   /* for any ipad or tablet */
 }
-/* for Laptops/Small Desktops Screens */
-@media (769px <= width <= 1024px) {
-  /* for ipad pro and laptops */
+/* footer styling for ipad pro and laptops and desktops or above screens */
+@media (min-width: 769px) {
   main footer .newslettr-icons-holder {
     flex-direction: row;
     justify-content: center;
@@ -346,11 +366,5 @@ main footer .newsletter button:hover {
     margin: 0;
     margin-bottom: 12.5px;
   }
-}
-/* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
-}
-/* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
 }
 /* end footer */

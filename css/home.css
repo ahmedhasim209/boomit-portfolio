@@ -1,12 +1,5 @@
 /** @format */
-/* :root {
-  --primary-color: #bd0a1f;
-  --secondary-color: #f4cd03;
-  --font-Futuru: "Futuru", sans-serif;
-  --font-berlinReg: "berlinReg", sans-serif;
-  --font-berlinBold: "berlinBold", sans-serif;
-  --font-berlinBoldX: "berlinBoldX", sans-serif;
-} */
+
 @import url("./fonts.css");
 * {
   margin: 0;
@@ -193,10 +186,38 @@
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
-}
-/* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
+@media (min-width: 1025px) {
+  main .hero {
+    margin-top: 120px;
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+      "heading-area"
+      "content-area"
+      "binocular-area";
+  }
+  main .hero .content-area {
+    grid-area: content-area;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+    margin-bottom: 50px;
+  }
+  .hero .heading-area h1 {
+    font-size: 48px;
+    line-height: 87%;
+    letter-spacing: 0%;
+  }
+  main .hero .content-area .buttons-holder {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  main .hero .content-area .paragraph-area {
+    margin-bottom: 0;
+  }
+  .hero .binocular-area .circles {
+    top: 3%;
+  }
 }
 /* end hero section */
 /* start Trusted section */
@@ -264,11 +285,32 @@ main .trusted p.second {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .trusted {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  main .trusted .trusted-flex {
+    padding: 130px 0;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+  }
+  main .trusted .trusted-flex .rows {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  main .trusted .trusted-flex .clints {
+    width: 120px;
+    height: 120px;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* start brief section */
 main .brief {
   padding-top: 53px;
@@ -360,7 +402,7 @@ main .brief .plans p.manage {
     margin-bottom: 40px;
   }
   main .brief .plans .plans-flex .plan {
-    padding: 0 40px;
+    padding: 0 15px;
     width: 100%;
     height: 60px;
     border-radius: 11px;
@@ -384,6 +426,7 @@ main .brief .plans p.manage {
     font-size: 12px;
     line-height: 126%;
     letter-spacing: 5%;
+    text-transform: capitalize;
   }
   main .brief .plans .plans-flex .plan:hover p {
     color: #000000;
@@ -412,11 +455,79 @@ main .brief .plans p.manage {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .brief {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  main .brief .heading p {
+    font-size: 20px;
+  }
+  main .brief .plans .plans-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  main .brief .plans .plans-flex .plan {
+    padding: 0 15px;
+    width: 100%;
+    height: 60px;
+    border-radius: 11px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0.15) 100%
+    );
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .brief .plans .plans-flex .plan p {
+    font-family: var(--font-Futuru);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 126%;
+    letter-spacing: 5%;
+    text-transform: capitalize;
+  }
+  main .brief .plans .plans-flex .plan:hover p {
+    color: #000000;
+  }
+  main .brief .plans .plans-flex .plan .img-holder {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  main .brief .plans .plans-flex .plan .img-holder img {
+    width: 100%;
+    height: 100%;
+  }
+  main .brief .plans p.manage {
+    display: block;
+    font-size: 20px;
+  }
+  main .brief .plans .plans-flex .plan .base,
+  main .brief .plans .plans-flex .plan .flip,
+  main .brief .plans .plans-flex .plan .shadow,
+  main .brief .plans .plans-flex .plan .crease {
+    display: none;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end brief section */
 /* start industries section */
 main .industries {
@@ -471,11 +582,28 @@ main .industries .industries-carts .industries-flex .cart p.commerce {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .industries .heading p {
+    font-size: 20px;
+  }
+  main .industries .industries-carts .industries-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+  }
+  main .industries .industries-carts .industries-flex .cart img {
+    width: 146px;
+    height: 113px;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end industries section */
 /* start consultation section */
 main .consultation {
@@ -582,11 +710,28 @@ main .consultation .booking p {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .consultation .consultation-content-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 20px;
+    margin: 80px 0;
+  }
+  .consultation-content-flex .cart {
+    width: 33%;
+    margin: 0;
+  }
+  main .consultation .booking button {
+    width: 600px;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end consultation section */
 /* start Services section */
 main .services {
@@ -703,7 +848,6 @@ main .services .button-holder button:hover {
 /* for Laptops/Small Desktops Screens */
 @media (769px <= width <= 1024px) {
   /* for ipad pro and laptops */
-
   main .services .heading h2,
   main .services .heading p {
     text-align: start;
@@ -723,11 +867,31 @@ main .services .button-holder button:hover {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .services .heading h2,
+  main .services .heading p {
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  main .services .services-carts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  main .services .button-holder button {
+    width: 600px;
+  }
+  main .services .services-carts .cart {
+    margin: 0;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end Services section */
 /* start testimonials section */
 main .testimonials {
@@ -900,11 +1064,51 @@ main .testimonials .booking button:hover {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .testimonials .testimonials-area .step {
+    width: 350px;
+  }
+  main .testimonials .testimonials-area .step2 {
+    transform: translateY(-55px);
+  }
+  main .testimonials .testimonials-area .step3 {
+    transform: translateY(-110px);
+  }
+  main .testimonials .testimonials-area .step4 {
+    transform: translateY(-55px);
+  }
+  main .testimonials {
+    position: relative;
+  }
+  /* main .testimonials::before {
+    position: absolute;
+    content: url(../assets/images/home/testimonials-top-line.svg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+  } */
+  main .testimonials .booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  main .testimonials .booking h4 {
+    width: 600px;
+    margin: 0 auto;
+  }
+  main .testimonials .booking button {
+    width: 600px;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end testimonials section */
 /* start insights section */
 main .insights {
@@ -975,11 +1179,35 @@ main .insights {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .insights .heading h2 {
+    margin-bottom: 30px;
+  }
+  .insights-carts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "cart1 cart2 cart3";
+    gap: 20px;
+  }
+  .insights-carts .cart {
+    margin: 0;
+  }
+  .insights-carts .cart1 {
+    grid-area: cart1;
+  }
+  .insights-carts .cart2 {
+    grid-area: cart2;
+  }
+  .insights-carts .cart3 {
+    grid-area: cart3;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end insights section */
 /* start booking section  */
 main .booking-section {
@@ -1081,11 +1309,34 @@ main .booking-section .buttons-holder p {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .booking-section .container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  main .booking-section .heading,
+  main .booking-section .content-holder {
+    width: 50%;
+  }
+  main .booking-section .heading h2,
+  main .booking-section .heading p {
+    text-align: start;
+  }
+  main .booking-section .heading h2 {
+    font-size: 31px;
+  }
+  main .booking-section .buttons-holder button {
+    width: 100%;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end booking section  */
 /* media query */
 /* for mobile & smaller Screens */
