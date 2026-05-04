@@ -94,11 +94,62 @@ main .landing .circle .left {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .landing .landing-heading {
+    display: grid;
+    grid-template-areas:
+      "f-heading circle"
+      "s-heading empty";
+    margin-top: 160px;
+    column-gap: 115px;
+  }
+  main .landing .landing-heading .f-heading {
+    grid-area: f-heading;
+  }
+  main .landing .landing-heading .f-heading h1 {
+    text-align: start;
+    font-size: 48px;
+  }
+  main .landing .landing-heading .circle {
+    grid-area: circle;
+  }
+  main .landing .circle .right,
+  main .landing .circle .left {
+    width: 240px;
+    height: 240px;
+  }
+  main .landing .landing-heading .s-heading {
+    grid-area: s-heading;
+  }
+  /* main .blogs .blogs-holder {
+    display: grid;
+    grid-template-areas:
+      "blogOne blogTwo"
+      "blogThree blogFour"
+      "blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  } */
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end landing section */
 /* start blog section */
 main .blogs {
@@ -205,11 +256,40 @@ main .blogs .blogs-holder .blogs-cart .blog-content p.popular {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .blogs .blogs-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+      "blogOne blogOne blogOne blogTwo blogTwo blogTwo"
+      "blogThree blogThree blogFour blogFour blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blogs-cart .img-holder {
+    width: 100%;
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end blog section */
 /* start booking section */
 main .booking {
@@ -304,9 +384,19 @@ main .booking .buttons-holder p {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .booking .buttons-holder {
+    width: 600px;
+    margin: 0 auto;
+  }
+  main .booking .buttons-holder button {
+    width: 100%;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end blog section */

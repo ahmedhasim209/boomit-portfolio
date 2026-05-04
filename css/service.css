@@ -220,6 +220,7 @@ main .services .buttons-holder .speak:hover {
     width: 80%;
   }
   section.heading h1 {
+    font-size: 48px;
     margin-top: 120px;
     margin-bottom: 80px;
   }
