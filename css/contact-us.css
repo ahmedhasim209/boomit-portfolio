@@ -52,11 +52,22 @@ main .landing .buttons .whatsapp {
   letter-spacing: 1%;
   cursor: pointer;
 }
+main .landing .buttons .book:hover {
+  background-color: #ffc9bf70;
+}
 main .landing .buttons .whatsapp {
   width: 100%;
   background-color: #64a22f;
   border: none;
   text-decoration: none;
+}
+main .landing .buttons .whatsapp:hover {
+  background-color: #88cc4d;
+  box-shadow: 0px 0px 20px 5px #94c06e;
+}
+main .landing .buttons .whatsapp:active {
+  background-color: #306105;
+  border: 1px solid #ffffff;
 }
 main .landing .buttons .whatsapp a {
   text-decoration: none;
@@ -151,6 +162,14 @@ main .form form button {
   cursor: pointer;
   margin-bottom: 15px;
 }
+main .form form button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+}
+main .form form button:active {
+  background-color: #931213;
+  border: 1px solid #ffffff;
+}
 main .form form p {
   text-align: center;
   color: #ffffff;
@@ -192,9 +211,30 @@ main .form form p {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  .flex-div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 200px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+  }
+  .flex-div section.form {
+    padding: 100px;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
 /* end footer */
