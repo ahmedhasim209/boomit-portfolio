@@ -11,7 +11,21 @@
 
 ---
 
-## 🖥️ Live Pages
+## 🌐 Live Demo
+
+> 🔗 **[View Live Project](#)** — *(replace `#` with your deployed URL after publishing)*
+
+You can deploy this project for free using any of the following platforms:
+
+| Platform | Link |
+|---|---|
+| GitHub Pages | [pages.github.com](https://pages.github.com) |
+| Netlify | [netlify.com](https://netlify.com) |
+| Vercel | [vercel.com](https://vercel.com) |
+
+---
+
+## 🖥️ Pages
 
 | Page | Description |
 |------|-------------|
@@ -21,11 +35,11 @@
 | `pages/about.html` | About the agency & team |
 | `pages/form.html` | Book a free consultation form |
 | `pages/blogs.html` | Insights & blog posts for founders |
-| `pages/subPages/blogOne.html` | Insights & blog posts for founders |
-| `pages/subPages/blogTwo.html` | Insights & blog posts for founders |
-| `pages/subPages/blogThree.html` | Insights & blog posts for founders |
-| `pages/subPages/blogFour.html` | Insights & blog posts for founders |
-| `pages/subPages/blogFive.html` | Insights & blog posts for founders |
+| `pages/subPages/blogOne.html` | Blog post — Article One |
+| `pages/subPages/blogTwo.html` | Blog post — Article Two |
+| `pages/subPages/blogThree.html` | Blog post — Article Three |
+| `pages/subPages/blogFour.html` | Blog post — Article Four |
+| `pages/subPages/blogFive.html` | Blog post — Article Five |
 
 ---
 
@@ -33,42 +47,42 @@
 
 ```
 boomit-portfolio/
-├── index.html              # Home page (entry point)
-├── pages/                  # Inner pages
+├── index.html                    # Home page (entry point)
+├── pages/                        # Inner pages
 │   ├── services.html
 │   ├── blogs.html
 │   ├── contact.html
 │   ├── about.html
-│   └── form.html
-│   ├── subPages/           # Sub pages
+│   ├── form.html
+│   └── subPages/                 # Blog sub-pages
 │       ├── blogOne.html
 │       ├── blogTwo.html
 │       ├── blogThree.html
 │       ├── blogFour.html
-│       ├── blogFive.html
-├── css/                    # Stylesheets
-│   ├── home.css            # Home page styles
-│   ├── service.css         # Service page styles
-│   ├── contact-us.css      # Contact page styles
-│   ├── about.css           # About page styles
-│   ├── blogs.css           # Blogs page styles
-│   ├── blogOne.css         # blogOne page styles
-│   ├── blogTwo.css         # blogTwo page styles
-│   ├── blogThree.css       # blogThree page styles
-│   ├── blogFour.css        # blogFour page styles
-│   ├── blogFive.css        # blogFive page styles
-│   ├── shared.css          # Global/shared styles
-│   └── all.min.css         # Compiled icon styles
-├── js/                     # JavaScript files
-│   ├── main.js             # Core interactions & UI logic
-│   └── active-nav.js       # Active navigation state handler
-│   └── form.js             # Core interactions & UI logic for form page
-└── assets/                 # Static assets
+│       └── blogFive.html
+├── css/                          # Stylesheets
+│   ├── home.css                  # Home page styles
+│   ├── service.css               # Services page styles
+│   ├── contact-us.css            # Contact page styles
+│   ├── about.css                 # About page styles
+│   ├── blogs.css                 # Blogs page styles
+│   ├── blogOne.css               # Blog One page styles
+│   ├── blogTwo.css               # Blog Two page styles
+│   ├── blogThree.css             # Blog Three page styles
+│   ├── blogFour.css              # Blog Four page styles
+│   ├── blogFive.css              # Blog Five page styles
+│   ├── shared.css                # Global/shared styles
+│   └── all.min.css               # Compiled icon styles
+├── js/                           # JavaScript files
+│   ├── main.js                   # Core interactions & UI logic
+│   ├── active-nav.js             # Active navigation state handler
+│   └── form.js                   # Form page interactions & logic
+└── assets/                       # Static assets
     ├── favicon.svg
     ├── boomit-logo.svg
     ├── boomit-logo-white.svg
     └── images/
-        └── home/           # Page-specific images & icons
+        └── home/                 # Page-specific images & icons
 ```
 
 ---
@@ -82,9 +96,10 @@ boomit-portfolio/
 - **Industry Targeting Section** — Visual industry tiles (Food & Beverage, Fashion, Pharmacy, Beauty, B2B, eCommerce, Services, Real Estate)
 - **4-Step Process Timeline** — Diagnose → Design → Execute → Optimize
 - **Free Consultation CTA** — Structured value proposition for booking calls
-- **Blog/Insights Preview** — Visual cards for founder-focused content
+- **Blog/Insights System** — Visual preview cards + 5 dedicated full blog article pages
 - **Newsletter Subscription** — Footer newsletter input with social media links
 - **Active Nav Highlighting** — JavaScript-driven current-page detection across all pages
+- **Consultation Form** — Dedicated booking form page with custom JS logic
 
 ---
 
@@ -94,7 +109,7 @@ boomit-portfolio/
 |---|---|
 | **HTML5** | Semantic page structure |
 | **CSS3** | Custom styling, layout, animations |
-| **JavaScript (Vanilla)** | UI interactions, nav toggling, active page state |
+| **JavaScript (Vanilla)** | UI interactions, nav toggling, active page state, form logic |
 | **Font Awesome 6.5.2** | Icon library (via CDN) |
 | **Normalize.css 8.0.1** | Cross-browser CSS reset (via CDN) |
 
@@ -153,7 +168,7 @@ The main landing page with the full brand narrative:
 Detailed breakdown of all 10 service offerings.
 
 ### 📰 Blogs (`pages/blogs.html`)
-Insight articles and resources for founders and brand teams.
+Insight articles and resources for founders and brand teams, with 5 individual full blog article pages under `pages/subPages/`.
 
 ### 📞 Contact (`pages/contact.html`)
 Contact information and inquiry options.
