@@ -1,0 +1,165 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/contact-us.css" />
+    <!-- all main file -->
+    <link rel="stylesheet" href="../css/all.min.css" defer />
+    <!-- normliaz cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      defer />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- intl-tel-input library for phone number input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>BOOMIT!</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- start Hero section -->
+        <!-- start navbar -->
+        <nav id="project-navbar">
+          <a href="../index.html"
+            ><img src="../assets/boomit-logo.svg" alt="boomit-logo"
+          /></a>
+          <div class="toggle-list">
+            <div class="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="pages">
+              <li><a href="../index.html" data-page="home">Home</a></li>
+              <li><a href="services.html" data-page="services">Services</a></li>
+              <li><a href="blogs.html" data-page="blogs">Blogs</a></li>
+              <li><a href="contact.html" data-page="contact">contact</a></li>
+              <li><a href="about.html" data-page="about">About us</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars"></i>
+          <button class="boomit"><a href="form.html">BOOM IT!</a></button>
+        </nav>
+        <!-- end navbar -->
+      </div>
+      <div class="flex-div">
+        <!-- start landing section -->
+        <section class="landing">
+          <div class="container">
+            <div class="heading">
+              <h1>Contact US</h1>
+              <h2>Let’s build something worth talking about.</h2>
+              <p>
+                Whether you’re launching, scaling, or transforming your brand —
+                start with a conversation that brings clarity and momentum
+              </p>
+              <h2>Why reach out</h2>
+              <p>
+                When you contact us, you’re speaking directly with a strategist
+                — not a salesperson.
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="book" type="button">Book a Strategy Call</button>
+              <button class="whatsapp" type="button">
+                <a href="https://wa.me/+201125601916" target="_blank"
+                  >WhatsApp a Strategist</a
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- end landing section -->
+        <!-- start form section -->
+        <div class="container">
+          <section class="form">
+            <div class="heading">
+              <h2>reach out</h2>
+              <p>You’ll get clarity fast, with no pressure.</p>
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="field-group">
+                <label for="company">Company Name</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Company Name"
+                  autocomplete="organization"
+                  required />
+                <span class="error-msg"></span>‍
+              </div>
+              <div class="field-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="XXXXXXX@gmail.com"
+                  autocomplete="email"
+                  required />
+
+                <span class="error-msg"></span>
+              </div>
+              <div class="field-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+                <span class="error-msg"></span>
+              </div>
+              <button type="submit">Submit</button>
+              <p>We respond within 24 hours — usually faster.</p>
+            </form>
+          </section>
+        </div>
+        <!-- end form section -->
+      </div>
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="logo">
+            <img src="../assets/boomit-logo-white.svg" alt="boomit-logo" />
+          </div>
+          <div class="footer-content heading">
+            <h2>Let’s build something worth talking about.</h2>
+            <p>
+              Whether you’re launching, scaling, or transforming your brand —
+              start with a conversation that brings clarity and momentum
+            </p>
+          </div>
+          <div class="newslettr-icons-holder">
+            <div class="newsletter">
+              <div class="input-flex">
+                <label>Subscribe to Newsletter</label>
+                <input type="text" placeholder="Company Name" />
+              </div>
+              <button type="submit">Subscribe</button>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <script>
+      const CURRENT_PAGE = "contact";
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

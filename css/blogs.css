@@ -1,0 +1,402 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+/* start landing section */
+main .landing .heading h1 {
+  font-family: var(--font-berlinBoldX);
+  font-size: 34px;
+  line-height: 124%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 0%;
+}
+main .landing .heading p {
+  color: #404040;
+  font-weight: 400;
+  text-align: start;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0%;
+}
+main .landing .circle {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2px;
+  margin-bottom: 40px;
+}
+main .landing .circle .right,
+main .landing .circle .left {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .landing .landing-heading {
+    display: grid;
+    grid-template-areas:
+      "f-heading circle"
+      "s-heading empty";
+    margin-top: 160px;
+  }
+  main .landing .landing-heading .f-heading {
+    grid-area: f-heading;
+  }
+  main .landing .landing-heading .f-heading h1 {
+    text-align: start;
+  }
+  main .landing .landing-heading .circle {
+    grid-area: circle;
+  }
+  main .landing .landing-heading .s-heading {
+    grid-area: s-heading;
+  }
+  main .blogs .blogs-holder {
+    display: grid;
+    grid-template-areas:
+      "blogOne blogTwo"
+      "blogThree blogFour"
+      "blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  }
+}
+/* for Desktops/Large Screens */
+@media (min-width: 1025px) {
+  main .landing .landing-heading {
+    display: grid;
+    grid-template-areas:
+      "f-heading circle"
+      "s-heading empty";
+    margin-top: 160px;
+    column-gap: 115px;
+  }
+  main .landing .landing-heading .f-heading {
+    grid-area: f-heading;
+  }
+  main .landing .landing-heading .f-heading h1 {
+    text-align: start;
+    font-size: 48px;
+  }
+  main .landing .landing-heading .circle {
+    grid-area: circle;
+  }
+  main .landing .circle .right,
+  main .landing .circle .left {
+    width: 240px;
+    height: 240px;
+  }
+  main .landing .landing-heading .s-heading {
+    grid-area: s-heading;
+  }
+  /* main .blogs .blogs-holder {
+    display: grid;
+    grid-template-areas:
+      "blogOne blogTwo"
+      "blogThree blogFour"
+      "blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  } */
+}
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
+/* for TVs/Wide Monitors */
+/* @media (min-width: 1201px) {
+} */
+/* end landing section */
+/* start blog section */
+main .blogs {
+  margin: 40px 0 80px;
+}
+main .blogs .blogs-holder {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+main .blogs .blogs-holder .blogs-cart {
+  padding: 30px;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: 0.2s ease-in-out;
+}
+main .blogs .blogs-holder .blogs-cart:hover {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  margin: 0 auto;
+}
+main .blogs .blogs-holder .blogs-cart .img-holder {
+  margin: 0 auto;
+  width: 265px;
+  height: 225px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+main .blogs .blogs-holder .blogs-cart .img-holder img {
+  width: 100%;
+  height: 100%;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content h4 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 126%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content h4 a {
+  text-decoration: none;
+  color: #020202;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content h4 a:hover {
+  text-decoration: underline;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content .date {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 20px;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 7%;
+  color: #404040;
+}
+main .blogs .blogs-holder .blogs-cart .blog-content p.popular {
+  font-size: 12px;
+  background-color: #ffe147;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .blogs .blogs-holder {
+    display: grid;
+    grid-template-areas:
+      "blogOne blogTwo"
+      "blogThree blogFour"
+      "blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  }
+  main .blogs .blogs-holder .blogs-cart .img-holder {
+    width: 100%;
+  }
+}
+/* for Desktops/Large Screens */
+@media (min-width: 1025px) {
+  main .blogs .blogs-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+      "blogOne blogOne blogOne blogTwo blogTwo blogTwo"
+      "blogThree blogThree blogFour blogFour blogFive blogFive";
+  }
+  main .blogs .blogs-holder .blogs-cart .img-holder {
+    width: 100%;
+  }
+  main .blogs .blogs-holder .blog-one {
+    grid-area: blogOne;
+  }
+  main .blogs .blogs-holder .blog-two {
+    grid-area: blogTwo;
+  }
+  main .blogs .blogs-holder .blog-three {
+    grid-area: blogThree;
+  }
+  main .blogs .blogs-holder .blog-four {
+    grid-area: blogFour;
+  }
+  main .blogs .blogs-holder .blog-five {
+    grid-area: blogFive;
+  }
+}
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
+/* for TVs/Wide Monitors */
+/* @media (min-width: 1201px) {
+} */
+/* end blog section */
+/* start booking section */
+main .booking {
+  margin-bottom: 120px;
+}
+main .booking .binocular-space {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .booking .binocular-space .circles {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0;
+}
+main .booking .binocular-space .circles .circle {
+  align-self: flex-start;
+  justify-self: start;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+main .booking .binocular-space .img-holder {
+  overflow: hidden;
+}
+main .booking .binocular-space .img-holder img {
+  max-width: 100%;
+  margin-bottom: -5px;
+  width: 218px;
+  position: relative;
+  z-index: 2;
+  width: 350px;
+}
+main .booking .binocular-space .buttons-holder {
+  width: 100%;
+}
+main .booking .buttons-holder button {
+  border: none;
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+main .booking .buttons-holder button:hover {
+  background-color: #cc2236;
+  box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
+}
+main .booking .buttons-holder button:active {
+  background-color: #931213;
+  border: 1px solid #ffffff;
+}
+main .booking .buttons-holder p {
+  color: #404040;
+  font-family: var(Futuru);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* end booking section */
+/* media query */
+/* for mobile & smaller Screens */
+@media (max-width: 480px) {
+}
+/* for tablet & medium Screens */
+@media (481px <= width <= 768px) {
+  /* for any ipad or tablet */
+}
+/* for Laptops/Small Desktops Screens */
+@media (769px <= width <= 1024px) {
+  /* for ipad pro and laptops */
+  main .booking .buttons-holder {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main .booking .buttons-holder button {
+    width: 100%;
+  }
+}
+/* for Desktops/Large Screens */
+@media (min-width: 1025px) {
+  main .booking .buttons-holder {
+    width: 600px;
+    margin: 0 auto;
+  }
+  main .booking .buttons-holder button {
+    width: 100%;
+  }
+}
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
+/* for TVs/Wide Monitors */
+/* @media (min-width: 1201px) {
+} */
+/* end blog section */

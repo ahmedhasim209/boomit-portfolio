@@ -1,13 +1,652 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS file -->
-    <link rel="stylesheet" href="css/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+    <!-- all main file -->
+    <link rel="stylesheet" href="css/all.min.css" defer />
+    <!-- normliaz cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      defer />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <title>BOOMIT!</title>
-</head>
-<body>
-    <h1>Welcome to BOOMIT!</h1>
-</body>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- start Hero section -->
+        <!-- start navbar -->
+        <nav id="project-navbar">
+          <a href="index.html"
+            ><img src="assets/boomit-logo.svg" alt="boomit-logo"
+          /></a>
+          <div class="toggle-list">
+            <div class="close-btn">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="pages">
+              <li><a href="index.html" data-page="home">Home</a></li>
+              <li>
+                <a href="pages/services.html" data-page="services">Services</a>
+              </li>
+              <li><a href="pages/blogs.html" data-page="blogs">Blogs</a></li>
+              <li>
+                <a href="pages/contact.html" data-page="contact">contact</a>
+              </li>
+              <li><a href="pages/about.html" data-page="about">About us</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars"></i>
+          <button class="boomit"><a href="pages/form.html">BOOM IT!</a></button>
+        </nav>
+        <!-- end navbar -->
+        <section class="hero">
+          <div class="heading-area">
+            <h1>
+              Growth isn’t luck<br />
+              It’s built with intention<br />
+              for brands <span>built to lead</span>
+            </h1>
+          </div>
+          <div class="binocular-area">
+            <div class="circles">
+              <span class="circle left"></span>
+              <span class="circle right"></span>
+            </div>
+            <div class="img-holder">
+              <img
+                src="assets/images/home/hero-glasses.webp"
+                alt="binoculars" />
+            </div>
+          </div>
+          <div class="content-area">
+            <div class="buttons-holder">
+              <button class="booking">
+                <a href="pages/form.html">Book a Free Consultation</a>
+              </button>
+              <button class="speak">Speak to a Growth Partner</button>
+              <!-- Going to whatsapp 01036090830 -->
+            </div>
+            <div class="paragraph-area">
+              <p>
+                Boomit is a strategic growth agency helping B2B and consumer
+                brands across Egypt & the GCC scale with clarity, precision, and
+                premium execution.We combine market insight, brand storytelling,
+                smart systems, and performance marketing to build brands people
+                trust , and results you can measure.Our Services: SEO,
+                Performance Marketing, Social Media management , UGC,
+                Influencers marketing , B2B Lead Generation, Websites & Landing
+                Pages.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end Hero section -->
+      <!-- start Trusted section -->
+      <section class="trusted">
+        <div class="container">
+          <div class="heading">
+            <h2>Trusted by brands built for excellence</h2>
+            <p>From startups to scaling businesses across Egypt & the GCC.</p>
+          </div>
+          <div class="trusted-flex">
+            <div class="rows">
+              <div class="clints">
+                <img
+                  src="assets/images/home/sweileh-logo.svg"
+                  alt="sweileh-logo logo" />
+              </div>
+              <div class="clints">
+                <img
+                  src="assets/images/home/wanaan-logo.svg"
+                  alt="wanaan-logo logo" />
+              </div>
+            </div>
+            <div class="rows">
+              <div class="clints">
+                <img
+                  src="assets/images/home/limo-logo.svg"
+                  alt="limo-logo logo" />
+              </div>
+              <div class="clints">
+                <img
+                  src="assets/images/home/aludam-logo.svg"
+                  alt="aludam-logo logo" />
+              </div>
+            </div>
+            <div class="rows">
+              <div class="clints">
+                <img
+                  src="assets/images/home/zaino-logo.svg"
+                  alt="zaino-logo logo" />
+              </div>
+              <div class="clints">
+                <img
+                  src="assets/images/home/elfahham-logo.svg"
+                  alt="elfahham-logo logo" />
+              </div>
+            </div>
+            <div class="rows">
+              <div class="clints">
+                <img
+                  src="assets/images/home/linae-logo.svg"
+                  alt="linae-logo logo" />
+              </div>
+              <div class="clints">
+                <img
+                  src="assets/images/home/mom-corner-logo.svg"
+                  alt="mom-corner-logo logo" />
+              </div>
+            </div>
+          </div>
+          <p class="second">
+            Strategy first. Creative with purpose. Data without noise.
+          </p>
+        </div>
+      </section>
+      <!-- start Trusted section -->
+      <!-- start brief section -->
+      <section class="brief">
+        <div class="container">
+          <div class="heading">
+            <h2>
+              We’re not here to “do marketing” We’re here to build your
+              advantage
+            </h2>
+            <p>
+              We are a team of strategists, creators, and performance
+              specialists who work as an extension of your brand ,aligning every
+              message, campaign, and asset around one goal: measurable growth.
+            </p>
+          </div>
+          <div class="plans">
+            <h3>We partner with brands that want</h3>
+            <div class="plans-flex">
+              <div class="plan">
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Strategy backed by insight</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
+              </div>
+              <div class="plan">
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Content backed by psychology</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
+              </div>
+              <div class="plan">
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Ads backed by data</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
+              </div>
+              <div class="plan">
+                <div class="base"></div>
+                <div class="flip"></div>
+                <div class="shadow"></div>
+                <div class="crease"></div>
+                <p>Growth backed by intention</p>
+                <div class="img-holder">
+                  <img
+                    src="assets/images/home/check-box-plans.svg"
+                    alt="check-box-plans" />
+                </div>
+              </div>
+            </div>
+            <p class="manage">We don’t “manage accounts” We elevate brands.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end brief section -->
+      <!-- start industries section -->
+      <section class="industries">
+        <div class="container">
+          <div class="heading">
+            <h2>Built for ambitious brands across industries</h2>
+            <p>We rely on research, positioning, and performance systems.</p>
+          </div>
+          <div class="industries-carts">
+            <h3>Whether you’re in</h3>
+            <div class="industries-flex">
+              <div class="cart">
+                <img
+                  src="assets/images/home/burger-icon.svg"
+                  alt="burger food & beverage" />
+                <p>food & beverage</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/dress-icon.svg"
+                  alt="fashion dress" />
+                <p>FASHION</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/Pharmacy-icon.svg"
+                  alt="pharmacy retail medicine" />
+                <p>Pharmacy Retail</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/Beauty-icon.svg"
+                  alt="beauty products" />
+                <p>Beauty</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/b2b-icon.svg"
+                  alt="business to business build" />
+                <p>B2B</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/eCommerce-icon.svg"
+                  alt="eCommerce shopping shopping cart" />
+                <p class="commerce">eCOMMERCE</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/services-icon.svg"
+                  alt="services tools hummer screw driver" />
+                <p>Services</p>
+              </div>
+              <div class="cart">
+                <img
+                  src="assets/images/home/realEstate-icon.svg"
+                  alt="real estate properties homes" />
+                <p>Real Estate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end industries section -->
+      <!-- start consultation section -->
+      <section class="consultation">
+        <div class="container">
+          <div class="heading">
+            <h2>What you’ll get in your free consultation</h2>
+            <p>
+              In 30 minutes, you’ll leave with clarity , not generic advice.
+            </p>
+          </div>
+          <div class="consultation-content-flex">
+            <div class="cart">
+              <div class="img-holder">
+                <img
+                  src="assets/images/home/business-chart.svg"
+                  alt="chart business growth" />
+              </div>
+              <h3>A quick growth diagnosis</h3>
+              <p>
+                where you are, what’s blocking <br />
+                growth, what matters next.
+              </p>
+            </div>
+            <div class="cart">
+              <div class="img-holder">
+                <img
+                  src="assets/images/home/business-rocket.svg"
+                  alt="chart business growth" />
+              </div>
+              <h3>A prioritized action plan</h3>
+              <p>fast wins . highest-leverage moves.</p>
+            </div>
+            <div class="cart">
+              <div class="img-holder">
+                <img
+                  src="assets/images/home/business-glasess.svg"
+                  alt="chart business growth" />
+              </div>
+              <h3>A realistic roadmap</h3>
+              <p>KPIs, channels, and what success looks like in your market.</p>
+            </div>
+          </div>
+          <div class="booking">
+            <button>Book a Call</button>
+            <!--going to calender -->
+            <p>You’ll speak with a strategist ,not a salesperson.</p>
+          </div>
+        </div>
+      </section>
+      <!-- end consultation section -->
+      <!-- start Services section -->
+      <section class="services">
+        <div class="container">
+          <div class="heading">
+            <h2>Services designed to build brands and sustain growth</h2>
+            <p>Choose what you need, or let us build the full system.</p>
+          </div>
+          <div class="services-carts">
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-right"></div>
+                <div class="logo-left"></div>
+              </div>
+              <div class="services-content">
+                <h3>Brand Strategy & Identity</h3>
+                <p>
+                  Positioning, messaging, tone of voice, and brand direction
+                  built to make your brand clear, premium, and unmistakable.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Brand Building</h3>
+                <p>
+                  Identity systems that turn business ideas into memorable,
+                  monetizable brands — from structure to story to scale.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Performance Marketing</h3>
+                <p>
+                  Full-funnel paid media built with research, segmentation,
+                  conversion thinking, and clean reporting for measurable
+                  outcomes.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Social Media Management</h3>
+                <p>
+                  Strategy-led social systems that educate, build trust, and
+                  convert — aligned with your brand direction.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>UGC Content Production</h3>
+                <p>
+                  Native-feel Reels/TikTok UGC built to feel human and perform
+                  in ads — testimonials, lifestyle, and conversion-first
+                  scripts.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Influencer Marketing</h3>
+                <p>
+                  Strategic creator collaborations with selection, contracts,
+                  approvals, reporting, and usage rights — built for real
+                  influence.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Smart Marketing Systems</h3>
+                <p>
+                  Smarter planning, forecasting, personalization, and creative
+                  development using intelligent systems to increase speed and
+                  precision.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>B2B Growth Marketing</h3>
+                <p>
+                  LinkedIn growth, lead funnels, landing pages, and email
+                  nurture designed to build authority and convert
+                  decision-makers.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>Websites & Landing Pages</h3>
+                <p>
+                  Fast, premium websites and high-conversion landing pages with
+                  UX, structure, and copy built to drive action.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+            <div class="cart">
+              <div class="logo-holder">
+                <div class="logo-left"></div>
+                <div class="logo-right"></div>
+              </div>
+              <div class="services-content">
+                <h3>SEO Strategy & Organic Growth</h3>
+                <p>
+                  Technical SEO, intent-based keyword strategy, content systems,
+                  internal linking, and speed optimization built for lasting
+                  organic growth.
+                </p>
+                <a href="pages/services.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="button-holder">
+            <button>View All</button>
+          </div>
+        </div>
+      </section>
+      <!-- end Services section -->
+      <!-- start testimonials section -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="heading">
+            <h2>How we work</h2>
+            <p>A calm, disciplined process built for clarity and momentum.</p>
+          </div>
+          <div class="testimonials-area">
+            <div class="img-holder">
+              <img
+                src="assets/images/home/testimonials-timeline.svg"
+                alt="logo boomit-logo" />
+            </div>
+            <div class="step1 step">
+              <h3>Step 01</h3>
+              <h2>Diagnose</h2>
+              <p>
+                We audit your brand, funnel, numbers, and market  so you know
+                what’s working, what’s leaking, and what to fix first.
+              </p>
+            </div>
+            <div class="step2 step">
+              <h3>Step 02</h3>
+              <h2>Design</h2>
+              <p>
+                We build your growth direction: positioning, messaging, funnel
+                structure, channel plan, and KPIs  aligned with your business
+                model.
+              </p>
+            </div>
+            <div class="step3 step">
+              <h3>Step 03</h3>
+              <h2>Execute</h2>
+              <p>
+                Creative, campaigns, content, and pages  delivered with premium
+                consistency and purpose. Every asset has a job.
+              </p>
+            </div>
+            <div class="step4 step">
+              <h3>Step 04</h3>
+              <h2>Optimize</h2>
+              <p>
+                Weekly learnings, performance iterations, and clean reporting.
+                No noise  just measurable improvement.
+              </p>
+            </div>
+          </div>
+          <div class="booking">
+            <h4>
+              Weekly learnings, performance iterations, and clean reporting. No
+              noise  just measurable improvement.
+            </h4>
+            <button>Book A Meeting</button>
+          </div>
+        </div>
+      </section>
+      <!-- end testimonials section -->
+      <!-- start insights section -->
+      <section class="insights">
+        <div class="container">
+          <div class="heading">
+            <h2>Insights for founders and brand teams</h2>
+          </div>
+          <div class="insights-carts">
+            <div class="cart cart1">
+              <img src="assets/images/home/blog-one.webp" alt="" />
+            </div>
+            <div class="cart cart2">
+              <img src="assets/images/home/blog-two.webp" alt="" />
+            </div>
+            <div class="cart cart3">
+              <img src="assets/images/home/blog-three.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end insights section -->
+      <!-- start booking section -->
+      <section class="booking-section">
+        <div class="container">
+          <div class="heading">
+            <h2>
+              Let’s build something people remember , and results you can
+              measure.
+            </h2>
+            <p>
+              Whether you’re launching, scaling, or repositioning, start with a
+              strategy conversation that brings clarity and direction.
+            </p>
+          </div>
+          <div class="content-holder">
+            <div class="binocular-space">
+              <div class="circles">
+                <span class="circle left"></span>
+                <span class="circle right"></span>
+              </div>
+              <div class="img-holder">
+                <img
+                  src="assets/images/home/hero-glasses.webp"
+                  alt="binoculars" />
+              </div>
+            </div>
+            <div class="buttons-holder">
+              <button>Book A Meeting</button>
+              <p>We respond within 24 hours — usually faster.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end booking section -->
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="logo">
+            <img src="assets/boomit-logo-white.svg" alt="boomit-logo" />
+          </div>
+          <div class="footer-content heading">
+            <h2>Let’s build something worth talking about.</h2>
+            <p>
+              Whether you’re launching, scaling, or transforming your brand —
+              start with a conversation that brings clarity and momentum
+            </p>
+          </div>
+          <div class="newslettr-icons-holder">
+            <div class="newsletter">
+              <div class="input-flex">
+                <label>Subscribe to Newsletter</label>
+                <input type="text" placeholder="Company Name" />
+              </div>
+              <button type="submit">Subscribe</button>
+            </div>
+            <div class="icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <script>
+      const CURRENT_PAGE = "home";
+    </script>
+    <script src="js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
 </html>

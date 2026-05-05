@@ -1,0 +1,101 @@
+/** @format */
+
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-Futuru);
+}
+/* start landing section */
+main .landing .blog-content .mistake-one,
+main .landing .blog-content .mistake-two,
+main .landing .blog-content .mistake-three,
+main .landing .blog-content .mistake-four,
+main .landing .blog-content .mistake-five,
+main .landing .blog-content .the-fix {
+  padding-left: 20px;
+  border-left: 3px solid var(--primary-color);
+}
+main .landing .blog-content .mistake-one p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  line-height: 153%;
+}
+main .landing .blog-content .mistake-one p i.fa-xmark {
+  color: red;
+  font-size: 20px;
+}
+main .landing .blog-content .mistake-one p i.fa-square-check {
+  color: rgb(0, 181, 0);
+  font-size: 15px;
+}
+main .landing .blog-content li,
+main .landing .blog-content li,
+main .landing .blog-content li {
+  color: #404040;
+  margin-left: 30px;
+  line-height: 28.8px;
+}
+main .landing .blog-content li::marker,
+main .landing .blog-content li::marker,
+main .landing .blog-content li::marker {
+  color: #bd0a1f;
+  font-size: 8px;
+}
+main .landing .blog-content .mistake-three .bad {
+  background-color: #ffeeee;
+  padding: 10px;
+  border-left: 3px solid var(--primary-color);
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .landing .blog-content .mistake-three .bad h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bd0a1f;
+}
+main .landing .blog-content .mistake-three .bad h5 i.fa-xmark {
+  color: red;
+  font-size: 20px;
+}
+main .landing .blog-content .mistake-three .bad p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+main .landing .blog-content .mistake-three .good {
+  background-color: #eeffee;
+  padding: 10px;
+  border-left: 3px solid #00aa99;
+  margin-bottom: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+main .landing .blog-content .mistake-three .good h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00aa99;
+}
+main .landing .blog-content .mistake-three .good h5 i.fa-square-check {
+  color: rgb(0, 181, 0);
+  font-size: 15px;
+}
+main .landing .blog-content .mistake-three .good p {
+  color: #404040;
+  font-family: var(--font-Futuru);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+/* end landing section */
