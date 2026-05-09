@@ -195,8 +195,29 @@ main .form .form-area form p {
   }
 }
 /* for Desktops/Large Screens */
-@media (1025px <= width <= 1200px) {
+@media (min-width: 1025px) {
+  main .landing .heading {
+    padding-top: 125px;
+    width: 80%;
+    padding-bottom: 60px;
+  }
+  main .landing .heading h1 {
+    font-size: 48px;
+  }
+  main .landing .heading p {
+    font-size: 20px;
+  }
+  main .form .form-area form .field-group {
+    width: 40%;
+  }
+  main .form .form-area form button,
+  main .form .form-area form p {
+    width: 40%;
+  }
 }
+/* for Desktops/Large Screens */
+/* @media (1025px <= width <= 1200px) {
+} */
 /* for TVs/Wide Monitors */
-@media (min-width: 1201px) {
-}
+/* @media (min-width: 1201px) {
+} */
