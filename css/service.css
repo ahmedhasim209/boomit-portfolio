@@ -46,17 +46,17 @@ main .services .services-carts-holder .cart .cart-glass {
   border-radius: inherit;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 241, 241, 0.4) 0%,
-    rgba(255, 255, 255, 0.05) 50%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-  border-radius: 25px;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(12px); /* Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  background: #ffffff30;
+  backdrop-filter: url(#lg-warp) blur(2px) saturate(140%) brightness(1.02);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    inset 0 1.5px 1px rgba(255, 255, 255, 0.75),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05),
+    inset 1px 0 1px rgba(255, 255, 255, 0.4),
+    inset -1px 0 1px rgba(255, 255, 255, 0.4);
 }
 main .services .services-carts-holder .cart .float {
   position: absolute;
