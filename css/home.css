@@ -33,7 +33,8 @@
 }
 .hero .binocular-area {
   grid-area: binocular-area;
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -111,17 +112,19 @@
   color: #ffffff;
   cursor: pointer;
 }
-.hero .buttons-holder .booking a {
-  color: #ffffff;
+.hero .buttons-holder a .booking {
   text-decoration: none;
 }
 .hero .buttons-holder .speak {
   background-color: transparent;
-  color: var(--primary-color);
   font-weight: 600;
-  text-decoration: underline;
   border: 2px solid var(--primary-color);
   cursor: pointer;
+  color: var(--primary-color);
+}
+.hero .buttons-holder a .speak {
+  text-decoration: none;
+  text-decoration: underline;
 }
 .hero .buttons-holder .booking:hover {
   background-color: #cc2236;
@@ -177,6 +180,9 @@
     flex-direction: row;
     column-gap: 20px;
   }
+  main .hero .content-area .buttons-holder a {
+    width: 100%;
+  }
   main .hero .content-area .paragraph-area {
     margin-bottom: 0;
   }
@@ -223,6 +229,9 @@
   main .hero .content-area .buttons-holder {
     flex-direction: row;
     column-gap: 20px;
+  }
+  main .hero .content-area .buttons-holder a {
+    width: 100%;
   }
   main .hero .content-area .paragraph-area {
     margin-bottom: 0;
@@ -333,12 +342,6 @@ main .trusted p.second {
     height: 120px;
   }
 }
-/* for Desktops/Large Screens */
-/* @media (1025px <= width <= 1200px) {
-} */
-/* for TVs/Wide Monitors */
-/* @media (min-width: 1201px) {
-} */
 /* start brief section */
 main .brief {
   padding-top: 53px;
@@ -384,7 +387,7 @@ main .brief .plans .plans-flex .plan .flip {
   transition: clip-path 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: auto;
 }
-main .brief .plans .plans-flex .plan:hover .flip {
+main .brief .plans .plans-flex .plan.flipped .flip {
   clip-path: inset(0% 0% 0% 0%);
 }
 main .brief .plans .plans-flex .plan .shadow {
@@ -401,7 +404,7 @@ main .brief .plans .plans-flex .plan p {
   z-index: 4;
   transition: ease-in-out 0.5s;
 }
-main .brief .plans .plans-flex .plan:hover p {
+main .brief .plans .plans-flex .plan.flipped p {
   color: #ffffff;
 }
 main .brief .plans .plans-flex .plan .img-holder {
@@ -449,6 +452,12 @@ main .brief .plans p.manage {
     justify-content: space-between;
     align-items: center;
   }
+  main .brief .plans .plans-flex .plan.flipped .flip {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  main .brief .plans .plans-flex .plan.flipped p {
+    color: #ffffff;
+  }
   main .brief .plans .plans-flex .plan p {
     font-family: var(--font-Futuru);
     font-weight: 600;
@@ -457,9 +466,9 @@ main .brief .plans p.manage {
     letter-spacing: 5%;
     text-transform: capitalize;
   }
-  main .brief .plans .plans-flex .plan:hover p {
+  /* main .brief .plans .plans-flex .plan:hover p {
     color: #000000;
-  }
+  } */
   main .brief .plans .plans-flex .plan .img-holder {
     display: block;
     width: 20px;
@@ -528,9 +537,9 @@ main .brief .plans p.manage {
     letter-spacing: 5%;
     text-transform: capitalize;
   }
-  main .brief .plans .plans-flex .plan:hover p {
+  /* main .brief .plans .plans-flex .plan:hover p {
     color: #000000;
-  }
+  } */
   main .brief .plans .plans-flex .plan .img-holder {
     display: block;
     width: 20px;
@@ -688,7 +697,7 @@ main .consultation .heading p {
 main .consultation .booking {
   text-align: center;
 }
-main .consultation .booking button {
+main .consultation .booking a button {
   color: var(--primary-color);
   background-color: transparent;
   border: 2px solid var(--primary-color);
@@ -702,7 +711,7 @@ main .consultation .booking button {
   margin-bottom: 10px;
   text-decoration: underline;
 }
-main .consultation .booking button:hover {
+main .consultation .booking a button:hover {
   background-color: #ffc9bf70;
 }
 main .consultation .booking p {
@@ -734,7 +743,7 @@ main .consultation .booking p {
   .consultation-content-flex .cart {
     margin: 0;
   }
-  main .consultation .booking button {
+  main .consultation .booking a button {
     width: 450px;
   }
 }
@@ -751,7 +760,7 @@ main .consultation .booking p {
     width: 33%;
     margin: 0;
   }
-  main .consultation .booking button {
+  main .consultation .booking a button {
     width: 600px;
   }
 }
@@ -858,11 +867,15 @@ main .services .button-holder button {
   font-weight: 600;
   text-transform: capitalize;
   cursor: pointer;
-  color: white;
   background-color: var(--primary-color);
   border: none;
+  color: #ffffff;
 }
-main .services .button-holder button:hover {
+main .services .button-holder a {
+  text-decoration: none;
+  color: #ffffff;
+}
+main .services .button-holder a button:hover {
   background-color: #cc2236;
   box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
 }
@@ -1050,6 +1063,7 @@ main .testimonials .booking button {
   border-radius: 10px;
   text-transform: capitalize;
   font-weight: 800;
+  cursor: pointer;
 }
 main .testimonials .booking button:hover {
   background-color: #cc2236;
@@ -1296,6 +1310,7 @@ main .booking-section .buttons-holder button {
   text-transform: capitalize;
   font-weight: 800;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 main .booking-section .buttons-holder button:hover {
   background-color: #cc2236;

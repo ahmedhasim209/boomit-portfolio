@@ -122,6 +122,7 @@ main .services .services-carts-holder .cart button {
   padding: 12px 27px;
   text-transform: uppercase;
   text-align: left;
+  cursor: pointer;
 }
 
 main .services .buttons-holder {
@@ -131,7 +132,10 @@ main .services .buttons-holder {
   width: 100%;
   margin-top: 30px;
 }
-main .services .buttons-holder button {
+main .services .buttons-holder a {
+  width: 100%;
+}
+main .services .buttons-holder a button {
   border: none;
   width: 100%;
   height: 60px;
@@ -141,12 +145,12 @@ main .services .buttons-holder button {
   text-transform: capitalize;
   font-weight: 800;
 }
-main .services .buttons-holder .booking {
+main .services .buttons-holder a .booking {
   background-color: var(--primary-color);
   color: #ffffff;
   cursor: pointer;
 }
-main .services .buttons-holder .speak {
+main .services .buttons-holder a .speak {
   background-color: transparent;
   color: var(--primary-color);
   font-weight: 600;
@@ -212,7 +216,6 @@ main .services .buttons-holder .speak:hover {
     column-gap: 20px;
   }
 }
-
 /* for Desktops/Large Screens */
 @media (min-width: 1025px) {
   /* for ipad pro and laptops */
