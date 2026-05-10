@@ -360,6 +360,9 @@ main .combine .buttons-holder .speak:hover {
     flex-direction: row;
     gap: 20px;
   }
+  main .combine .buttons-holder a {
+    width: 100%;
+  }
   main .combine .buttons-holder .booking:hover {
     background-color: #cc2236;
     box-shadow: 0px 0px 20px 5px rgba(204, 34, 54, 0.5);
@@ -397,6 +400,9 @@ main .combine .buttons-holder .speak:hover {
   main .combine .buttons-holder {
     flex-direction: row;
     gap: 20px;
+  }
+  main .combine .buttons-holder a {
+    width: 100%;
   }
   main .combine .buttons-holder .booking:hover {
     background-color: #cc2236;

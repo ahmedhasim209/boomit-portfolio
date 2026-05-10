@@ -62,9 +62,6 @@ main .form .form-area form .field-group label {
   line-height: 28px;
   letter-spacing: 7%;
 }
-main .form .form-area form .field-group input#phone {
-  /* width: 144%; */
-}
 main .form .form-area form .field-group input,
 main .form .form-area form .field-group select {
   color: #000;
@@ -75,6 +72,19 @@ main .form .form-area form .field-group select {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: 7%;
+}
+main .form .form-area form .field-group select {
+  /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Add custom arrow via background SVG */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 20px; /* make room for the arrow */
 }
 main .form .form-area form .field-group input:hover,
 main .form .form-area form .field-group select:hover {

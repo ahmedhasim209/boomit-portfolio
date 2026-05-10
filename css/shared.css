@@ -234,12 +234,12 @@ main nav i {
 }
 /* for TVs/Wide Monitors */
 @media (min-width: 1201px) {
-  /* .container {
+  .container {
+    width: 70%;
+  }
+  main nav.fixed {
     width: 80%;
-  } */
-  /* main nav.fixed {
-    width: 60%;
-  } */
+  }
   main nav .boomit:hover a {
     border: 1px solid #ffffff;
     background-color: #910707;
