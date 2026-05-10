@@ -63,7 +63,7 @@ main .form .form-area form .field-group label {
   letter-spacing: 7%;
 }
 main .form .form-area form .field-group input#phone {
-  width: 144%;
+  /* width: 144%; */
 }
 main .form .form-area form .field-group input,
 main .form .form-area form .field-group select {

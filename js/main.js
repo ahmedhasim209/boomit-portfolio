@@ -18,25 +18,6 @@ closeBtn.addEventListener("click", () => {
   document.body.style.overflow = "";
 });
 
-//handle active link in navbar
-// const navLinks = document.querySelectorAll("ul.pages li a[data-page]");
-// const current = window.location.pathname.split("/").pop() || "index.html"; // get current page filename, default to index.html if root
-// console.log(current);
-// console.log(navLinks[0].getAttribute("data-page"));
-
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("ul.pages li a[data-page]");
-  // console.log(links);
-
-  links.forEach((link) => {
-    link.classList.remove("active");
-
-    if (link.dataset.page === CURRENT_PAGE) {
-      link.classList.add("active");
-    }
-  });
-});
-
 //Handle fixed navbar on scroll for ipad pro and desktop screens or above
 const navBar = document.getElementById("project-navbar");
 const navBarOffset = navBar.offsetTop;

@@ -24,6 +24,34 @@
     <title>BOOMIT!</title>
   </head>
   <body>
+    <svg
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      aria-hidden="true">
+      <defs>
+        <filter
+          id="lg-warp"
+          x="-5%"
+          y="-5%"
+          width="110%"
+          height="110%"
+          color-interpolation-filters="sRGB">
+          <feImage
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            preserveAspectRatio="none"
+            result="dmap"
+            href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 52'%3E%3Cdefs%3E%3ClinearGradient id='lx' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23d00000'/%3E%3Cstop offset='12%25' stop-color='%23a05050'/%3E%3Cstop offset='28%25' stop-color='%23808080'/%3E%3Cstop offset='72%25' stop-color='%23808080'/%3E%3Cstop offset='88%25' stop-color='%23407070'/%3E%3Cstop offset='100%25' stop-color='%23003030'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='52' fill='url(%23lx)'/%3E%3C/svg%3E" />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="dmap"
+            scale="22"
+            xChannelSelector="G"
+            yChannelSelector="R" />
+        </filter>
+      </defs>
+    </svg>
     <main>
       <div class="container">
         <!-- start Hero section -->
