@@ -150,13 +150,6 @@
   font-family: var(--font-typo);
 }
 /* media query */
-/* for mobile & smaller Screens */
-@media (max-width: 480px) {
-}
-/* for tablet & medium Screens */
-@media (481px <= width <= 768px) {
-  /* for any ipad or tablet */
-}
 /* for Laptops/Small Desktops Screens */
 @media (769px <= width <= 1024px) {
   /* for ipad pro and laptops */
@@ -375,7 +368,7 @@ main .brief .plans .plans-flex .plan .base {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: var(--secondary-color); /* warm paper tone */
+  background: var(--secondary-color);
   z-index: auto;
 }
 main .brief .plans .plans-flex .plan .flip {
@@ -466,9 +459,6 @@ main .brief .plans p.manage {
     letter-spacing: 5%;
     text-transform: capitalize;
   }
-  /* main .brief .plans .plans-flex .plan:hover p {
-    color: #000000;
-  } */
   main .brief .plans .plans-flex .plan .img-holder {
     display: block;
     width: 20px;
@@ -1149,12 +1139,6 @@ main .testimonials .booking button:hover {
     width: 600px;
   }
 }
-/* for Desktops/Large Screens */
-/* @media (1025px <= width <= 1200px) {
-} */
-/* for TVs/Wide Monitors */
-/* @media (min-width: 1201px) {
-} */
 /* end testimonials section */
 /* start insights section */
 main .insights {
@@ -1167,8 +1151,6 @@ main .insights {
   display: flex;
   justify-content: center;
   align-items: end;
-  position: relative;
-  z-index: -1;
   margin: 0 auto;
   width: 100%;
   height: 258px;
@@ -1176,18 +1158,11 @@ main .insights {
   border-radius: 15px;
   overflow: hidden;
 }
-.insights-carts .cart::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.insights-carts .cart .img-holder,
+.insights-carts .cart a img {
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, #00000099, #00000000);
-}
-.insights-carts .cart img {
-  width: 100%;
-  height: 100%;
+  cursor: pointer;
 }
 /* media query */
 /* for mobile & smaller Screens */
