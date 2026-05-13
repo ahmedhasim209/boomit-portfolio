@@ -13,7 +13,7 @@
 
 ## 🌐 Live Demo
 
-> 🔗 **[View Live Project](https://boomit.agency/)** — *(replace `#` with your deployed URL after publishing)*
+> 🔗 **[View Live Project](https://boomit.agency/)** 
 
 | Platform | Link |
 |---|---|
