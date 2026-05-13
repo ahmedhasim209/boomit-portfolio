@@ -13,11 +13,11 @@
 
 ## 🌐 Live Demo
 
-> 🔗 **[View Live Project]((#)(https://boomit.agency/))**
+> 🔗 **[View Live Project](https://boomit.agency/)** — *(replace `#` with your deployed URL after publishing)*
 
 | Platform | Link |
 |---|---|
-| GitHub Pages | [pages.github.com]([https://pages.github.com](https://ahmedhasim209.github.io/boomit-portfolio/)) |
+| GitHub Pages | [pages.github.com](https://ahmedhasim209.github.io/boomit-portfolio/) |
 
 ---
 
