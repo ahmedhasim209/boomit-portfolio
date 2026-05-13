@@ -142,8 +142,28 @@ form.addEventListener("submit", async (e) => {
 
   console.log(data);
 
-  // disable button
-  const btn = form.querySelector('button[type="submit"]');
+  const btn = briefForm.querySelector("button[type='submit']");
   btn.disabled = true;
-  btn.textContent = "submitting...";
+  btn.textContent = "Sending...";
+
+  fetch("https://yourdomain.com/send-brief.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  })
+    .then((res) => res.json())
+    .then((result) => {
+      if (result.success) {
+        window.location.replace("thanks.html");
+        briefForm.reset();
+      } else {
+        throw new Error(result.error);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      btn.disabled = false;
+      btn.textContent = "Submit";
+      alert("Something went wrong. Please try again.");
+    });
 });
