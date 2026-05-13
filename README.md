@@ -13,9 +13,8 @@
 
 ## 🌐 Live Demo
 
-> 🔗 **[View Live Project](#)** — *(replace `#` with your deployed URL after publishing)*
-
-You can deploy this project for free using any of the following platforms:
+> 🔗 **[View Live Project]((https://boomit.agency/))**
+> 🔗 **[View Live Project](https://ahmedhasim209.github.io/boomit-portfolio/)**
 
 | Platform | Link |
 |---|---|
